@@ -13,3 +13,9 @@ variables
 mixins
 globals
 pages folder
+
+
+Content & Project Aim
+======================
+
+The project is a Rich Web application using several technologies on the client side.
