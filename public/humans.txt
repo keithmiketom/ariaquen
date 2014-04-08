@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Sandra McCormack -- Design & dev -- <twitter>
+    Keith Michael Gregg -- Design & dev -- @keithmiketom
+    Miguel Angel Castillo Garcia -- Design & dev -- <twitter>
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr
