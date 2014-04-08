@@ -1,3 +1,6 @@
+//global reset, vars, mixins etc... remember to import in the individual files
+@import "_reset.scss";
+
 @import "_variables.scss";
 
 @import "_mixins.scss";
@@ -5,6 +8,10 @@
 @import "_functions.scss";
 
 @import "_globals.scss";
+
+//specific pages
+@import "pages/_home.scss";
+@import "pages/_products.scss";
 
 
 p {color:$primary-color;}
