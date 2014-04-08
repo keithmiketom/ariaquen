@@ -1,11 +1,44 @@
 Ariaquen::Application.routes.draw do
-  devise_for :users
+  get "orderproducts/index"
+
+  get "orderproducts/show"
+
+  get "orderproducts/new"
+
+  get "orderproducts/edit"
+
+  resources :orders
+
+
+  get "cart/index"
+
+  devise_for :users do 
+    resources :orders 
+  end
+
+  resources :orders do 
+    resources :orderproducts 
+  end
+
+  resources :articles do
+    resources :comments
+  end
 
   get "home/index"
   
 
   resources :products
-
+  
+  match '/cart' => 'cart#index' 
+  
+  match '/cart/:id' => 'cart#add'  
+  
+  match '/cart/remove/:id' => 'cart#remove'
+  
+  match '/clearCart' => 'cart#clearCart'
+  
+  match '/checkout' => 'cart#createOrder'
+  
   root :to => 'home#index'
   
   

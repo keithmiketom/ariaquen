@@ -11,7 +11,34 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140408003317) do
+ActiveRecord::Schema.define(:version => 20140408123546) do
+
+  create_table "orderproducts", :force => true do |t|
+    t.integer  "product_id"
+    t.string   "product_name"
+    t.string   "product_detail"
+    t.integer  "quantity"
+    t.decimal  "price"
+    t.integer  "order_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  add_index "orderproducts", ["order_id"], :name => "index_orderproducts_on_order_id"
+
+  create_table "orders", :force => true do |t|
+    t.datetime "order_date"
+    t.integer  "user_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.string   "ip_address"
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "card_type"
+    t.date     "card_expires_on"
+  end
+
+  add_index "orders", ["user_id"], :name => "index_orders_on_user_id"
 
   create_table "products", :force => true do |t|
     t.string   "product_name"

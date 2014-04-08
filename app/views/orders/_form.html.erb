@@ -1,0 +1,53 @@
+<%= form_for @order do |f| %>
+  <% if @order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+      <ul>
+      <% @order.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="name">
+  	<ul>
+      <li><%= f.text_field :firstname %></li>
+  	  <li><%= f.label :firstname %></li>
+    </ul>
+  </div>
+  <div class="name">
+  	<ul>
+  	  <li><%= f.text_field :lastname %></li>
+  	  <li><%= f.label :lastname %></li>
+    </ul>
+  </div>
+  
+  <div class="name">
+  	<ul>
+  	  <li><%= f.select :card_type, options_for_select([["Visa", "visa"], ["MasterCard", "master"], ["Discover", "discover"], ["American Express", "american_express"]]) %></li>
+      <li><%= f.label :card_type %></li>
+    </ul>
+  </div>
+
+  <div class="name">
+    <ul>
+      <li><%= f.text_field :card_number %></li>
+      <li><%= f.label :card_number %></li>
+    <ul>
+  </div>
+  <div class="name">
+  	<ul>
+      <li><%= f.text_field :card_verification %></li>
+      <li><%= f.label :card_verification, "Card Verification Value (CVV)" %></li>
+    <ul>
+  </div>
+  <div class="name">
+  	<ul>
+      <li><%= f.date_select :card_expires_on, :discard_day => true, :start_year => Date.today.year, :end_year => (Date.today.year+10), :add_month_numbers => true %></li>
+      <li><%= f.label :card_expires_on %></li>
+   </ul>
+  </div>
+  
+<% end %>

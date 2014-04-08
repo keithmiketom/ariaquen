@@ -1,0 +1,15 @@
+
+<% total = 0 %>
+
+
+<% @cart.each do | id, quantity | %> 
+<% product = Product.find_by_id(id) %>
+
+
+<% total += quantity * product.price %>
+<% end %>
+
+<span style="color:#000; font-size:1.2em;"><%= image_tag("cart.png", :style => "height:15px;" )  %>      <%= number_to_currency(total, :unit => "€") %></span>
+
+
+

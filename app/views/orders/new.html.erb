@@ -1,0 +1,13 @@
+
+<div class="site-forms-title">
+<h2>New order</h2>
+</div>
+
+<div class="site-forms">
+<%= render 'form' %>
+<div class="form-submit">
+	<ul>
+	<li><%= link_to 'PAY NOW', :controller => "cart", :action => "createOrder" %></li>
+    </ul>
+</div>
+</div>
