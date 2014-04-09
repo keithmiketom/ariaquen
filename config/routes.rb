@@ -43,11 +43,10 @@ Ariaquen::Application.routes.draw do
   match '/checkout' => 'cart#createOrder'
   
   match '/myprofile' => 'profiles#myprofile' 
-
   
   root :to => 'home#index'
   
-  
+  #THIS A COMMENT
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
