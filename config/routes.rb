@@ -1,4 +1,7 @@
 Ariaquen::Application.routes.draw do
+  resources :userprofiles
+
+
   get "orderproducts/index"
 
   get "orderproducts/show"
@@ -38,6 +41,9 @@ Ariaquen::Application.routes.draw do
   match '/clearCart' => 'cart#clearCart'
   
   match '/checkout' => 'cart#createOrder'
+  
+  match '/myprofile' => 'profiles#myprofile' 
+
   
   root :to => 'home#index'
   

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140408170704) do
+ActiveRecord::Schema.define(:version => 20140409194850) do
 
   create_table "orderproducts", :force => true do |t|
     t.integer  "product_id"
@@ -54,6 +54,21 @@ ActiveRecord::Schema.define(:version => 20140408170704) do
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
+
+  create_table "userprofiles", :force => true do |t|
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "email"
+    t.string   "address"
+    t.string   "phone_number"
+    t.string   "user_image_url"
+    t.date     "date_of_birth"
+    t.integer  "user_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  add_index "userprofiles", ["user_id"], :name => "index_userprofiles_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "",    :null => false

@@ -1,6 +1,8 @@
 //global reset, vars, mixins etc... remember to import in the individual files
 @import "_reset.scss";
 
+@import "bourbon";
+
 @import "_variables.scss";
 
 @import "_mixins.scss";
@@ -14,4 +16,4 @@
 @import "pages/_products.scss";
 
 
-p {color:$primary-color;}
+p {color:$primary-color;} 
