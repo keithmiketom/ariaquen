@@ -1,0 +1,40 @@
+<div class="product-catalog">
+	
+<h1>Product Catalog by Category and Gender</h1>
+<br />
+<h2><%= @product %> <%= @gender %></h2>
+
+
+<% @products.each do |product| %>
+
+   <div class="float-products">
+            <div class="image">
+                <%= link_to (image_tag product.image_url1, :style => "height:300px"), product %>
+            </div>
+        
+            <div class="title">
+                <%= link_to product.product_name.upcase, product %>
+            </div>
+  
+            <div class="title">
+                <% if product.in_stock == false %>
+                <p>OUT OF STOCK</p>
+                <% else %>
+                <%= number_to_currency(product.price, :unit => "&euro;") %>
+                <% end %>
+            </div>
+       
+            <div class="title">
+                <% if current_user && current_user.admin = true %>
+                  <%= link_to 'New Product', new_product_path %>
+                  <%= link_to 'Edit', edit_product_path(product) %>
+                  <%= link_to 'Destroy', product, confirm: 'Are you sure?', method: :delete %>
+                  <% else %>
+                  
+                <% end %>
+            </div>
+   </div>
+<% end %>
+  
+  
+ 

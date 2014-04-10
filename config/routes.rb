@@ -1,6 +1,21 @@
 Ariaquen::Application.routes.draw do
+
+
+
+  resources :categories, :except => [:index, :show]
+  resources :forums, :except => :index do
+  resources :topics, :shallow => true, :except => :index do
+  resources :posts, :shallow => true, :except => [:index, :show]
+    end
+    root :to => 'categories#index', :via => :get
+  end
+
+
   resources :userprofiles
 
+  #get 'tags/:tag', to: 'articles#index', as: :tag
+  
+  get 'tags/:tag' => 'articles#index', :as => :tag
 
   get "orderproducts/index"
 
@@ -9,11 +24,6 @@ Ariaquen::Application.routes.draw do
   get "orderproducts/new"
 
   get "orderproducts/edit"
-
-  resources :orders
-
-
-  get "cart/index"
 
   devise_for :users do 
     resources :orders 
@@ -27,26 +37,37 @@ Ariaquen::Application.routes.draw do
     resources :comments
   end
 
-  get "home/index"
   
+  get "cart/index" 
 
   resources :products
   
-  match '/cart' => 'cart#index' 
+  match '/search_by_category/:product/:gender' => 'products#search_by_category'
   
-  match '/cart/:id' => 'cart#add'  
+  match '/check', :controller=>'primes', :action=>'checkprime'
+  
+  match '/validate', :controller=>'primes', :action=>'isprime'
+    
+  match '/checkout' => 'cart#createOrder'
+  
+  match '/cart' => 'cart#index' 
+
+  match '/cart/:id' => 'cart#add' 
   
   match '/cart/remove/:id' => 'cart#remove'
   
   match '/clearCart' => 'cart#clearCart'
+
+  match '/myuserprofile' => 'userprofiles#myuserprofile'
   
-  match '/checkout' => 'cart#createOrder'
+  match '/search' => 'products#index'
   
-  match '/myprofile' => 'profiles#myprofile' 
+  match '/product_category/:id' => 'products#product_category'
+
+  root :to => "home#index"
   
-  root :to => 'home#index'
   
-  #THIS A COMMENT
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -103,4 +124,5 @@ Ariaquen::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+  
 end
