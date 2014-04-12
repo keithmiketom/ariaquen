@@ -6,6 +6,24 @@ Ariaquen::Application.routes.draw do
 
 
 
+  get "site/splash"
+
+  get "site/home"
+
+  get "site/contact"
+
+  get "site/about"
+
+  get "site/store_locator"
+
+  get "site/blog"
+
+  get "site/gallery"
+
+  get "site/affiliates"
+
+  get "site/testimonials"
+
   resources :categories, :except => [:index, :show]
 
   resources :forums, :except => :index do
