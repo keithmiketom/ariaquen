@@ -67,5 +67,10 @@ ul li {
         float: left;
         padding-right: 5px; }
 
+p.test {
+  background-color: cyan;
+  font-size: 100px;
+  text-align: center; }
+
 p {
   color: #336699; }
