@@ -1,45 +1,66 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Firstname:</b>
-  <%= @userprofile.firstname %>
-</p>
+<div class="profile-container">
+	
+	<div class="profile-title">YOUR PROFILE</div>
+<table>	
+	
+<div class="avatar">
+  <tr>
+    <td><%= image_tag @userprofile.user.gravatar_url, :style => "width:48px;height:48px;" %></td>
+  </tr>
+</div>
 
-<p>
-  <b>Lastname:</b>
-  <%= @userprofile.lastname %>
-</p>
+<div class="firstname">
+  <tr>
+    <td>Firstname:</td>
+    <td><%= @userprofile.firstname %><td>
+  </tr>
+</div>
 
-<p>
-  <b>Email:</b>
-  <%= @userprofile.email %>
-</p>
+<div class="lastname">
+  <tr>
+    <td>Lastname:</td>
+    <td><%= @userprofile.lastname %></td>
+  </tr>
+</div>
 
-<p>
-  <b>Address:</b>
-  <%= @userprofile.address %>
-</p>
+<div class="user-email">
+  <tr>
+    <td>Email:</td>
+    <td><%= @userprofile.email %></td>
+  </tr>
+</div>
 
-<p>
-  <b>Phone number:</b>
-  <%= @userprofile.phone_number %>
-</p>
+<div class="address">
+  <tr>
+    <td>Address:</td>
+    <td><%= @userprofile.address %></td>
+  </tr>
+</div>
 
-<p>
-  <b>User image url:</b>
-  <%= @userprofile.user_image_url %>
-</p>
+<div class="phonenumber">
+  <tr>
+    <td>Phone number:</td>
+    <td><%= @userprofile.phone_number %></td>
+  </tr>
+</div>
 
-<p>
-  <b>Date of birth:</b>
-  <%= @userprofile.date_of_birth %>
-</p>
+<div class="userdob">
+  <tr>
+    <td>Date of birth:</td>
+    <td><%= @userprofile.date_of_birth %></td>
+  </tr>
+</div>
 
-<p>
-  <b>User:</b>
-  <%= @userprofile.user %>
-</p>
+<div class="useruser">
+  <tr>
+    <td>User:</td>
+    <td><%= @userprofile.user %></td>
+  </tr>
+</div>
+</table>
+<p id="profile-bottom-links"><%= link_to 'Edit', edit_userprofile_path(@userprofile) %> |
+<%= link_to 'Back', userprofiles_path %></p>
 
-
-<%= link_to 'Edit', edit_userprofile_path(@userprofile) %> |
-<%= link_to 'Back', userprofiles_path %>
+</div>

@@ -80,4 +80,35 @@ class ProductsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def product_category
+    @products = Product.find_all_by_product_category(params[:id])
+    @product_category = params[:id]
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @products }
+    end
+  end
+  
+  def search_by_category
+    @product = params[:product]
+    @gender = params[:gender]
+    @products = Product.where("product_category like ? and gender like ?", @product, @gender)
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @products }
+    end
+  end
+
+
+  def search
+    @search_term = params[:q]
+      st = "%#{params[:q]}%"
+    @products = Product.where("name like ? or description like ?", st, st)
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @items }
+  end
+end
+
 end

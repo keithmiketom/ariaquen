@@ -1,0 +1,8 @@
+<% @products = Product.select('DISTINCT product_category, gender') %>
+<div class="product_categoryListAll">
+<% @products.each do | c | %>
+<a href="/search_by_category/<%= c.product_category %>/<%= c.gender %>" id="product_categorylisting"><%= c.product_category %><%= c.gender %></a>
+<br />
+<% end %>
+</div>
+
