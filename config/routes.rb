@@ -1,4 +1,6 @@
 Ariaquen::Application.routes.draw do
+  devise_for :installs
+
   resources :userprofiles
 
 
@@ -11,7 +13,6 @@ Ariaquen::Application.routes.draw do
   get "orderproducts/edit"
 
   resources :orders
-
 
   get "cart/index"
 
