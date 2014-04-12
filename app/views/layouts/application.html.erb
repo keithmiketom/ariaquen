@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Ariaquen</title>
+<<<<<<< HEAD
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
@@ -13,10 +14,14 @@
   <script src="../assets/skel-panels.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+=======
+  <%= stylesheet_link_tag    "main", :media => "all" %>
+
+>>>>>>> 3541f00ea902d48b3f93bac17fa2c6435511bf2f
   <%= csrf_meta_tags %>
 </head>
 <body>
-	
+
 <p class="notice"><%= notice %></p> 
 <p class="alert"><%= alert %></p>
 
@@ -34,7 +39,24 @@
 </div>
 </section>
 <%= yield %>
+<<<<<<< HEAD
 <p class="test">yolo</p>
   <%= javascript_include_tag "application" %>
+=======
+
+
+
+<% if user_signed_in? %> 
+ <div>Signed in as... <%= current_user.email %> (<%= link_to 'Sign out', destroy_user_session_path, :method => :delete 
+ %>)</div> 
+<% else %> 
+ <%= link_to 'Register', new_user_registration_path %> or <%= link_to 'Sign in', new_user_session_path %> 
+<% end %> 
+
+<li><%= link_to 'Login', new_user_session_path %></li> 
+<li><%= link_to 'Logout', destroy_user_session_path, :method => :delete %></li>
+
+<%= javascript_include_tag "application" %>
+>>>>>>> 3541f00ea902d48b3f93bac17fa2c6435511bf2f
 </body>
 </html>
