@@ -9,7 +9,25 @@
 //
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
-//
 //= require jquery
 //= require jquery_ujs
+//= require bjqs-1.3
 //= require_tree .
+
+$(function() {
+  $(document).on("click","#products th a, #products .pagination a", function() {
+    $.getScript(this.href);
+    return false;
+  });
+  $("#products_search input").keyup(function() {
+  	console.log($("#products_search").attr("action"));
+  	console.log($("#products_search").serialize());
+    $.get(
+    	$("#products_search").attr("action"), 
+    	$("#products_search").serialize(), 
+    	null, 
+    	"script");
+    return false;
+  });
+});
+

@@ -1,2 +1,42 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+  
+  <div id="slider-container">
+
+      <!--  Outer wrapper for presentation only, this can be anything you like -->
+      <div id="banner-fade">
+
+        <!-- start Basic Jquery Slider -->
+        <ul class="bjqs">
+          <li><img src="assets/cover1.png"></li>
+          <li><img src="assets/cover2.png"></li>
+          <li><img src="assets/cover3.png"></li>
+          <li><img src="assets/cover4.png"></li>
+          <li><img src="assets/cover5.png"></li>
+          <li><img src="assets/cover6.png"></li>
+          <li><img src="assets/cover7.png"></li>
+          <li><img src="assets/cover8.png"></li>
+          <li><img src="assets/cover9.png"></li>
+          <li><img src="assets/cover10.png"></li>
+        </ul>
+        <!-- end Basic jQuery Slider -->
+
+      </div>
+      <!-- End outer wrapper -->
+
+      <script class="secret-source">
+        jQuery(document).ready(function($) {
+
+          jQuery('#banner-fade').bjqs({
+            height      : 700,
+            width       : 1340,
+            responsive  : false
+          });
+
+        });
+      </script>
+
+    </div>
+	
+
+
+  
+ 
