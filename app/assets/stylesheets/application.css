@@ -81,8 +81,11 @@ p.test {
   min-height: 100%; }
 
 #main {
+  width: 90%;
+  background-color: pink;
   overflow: auto;
-  padding-bottom: 150px; }
+  padding-bottom: 150px;
+  margin: 0 auto; }
 
 /* must be same height as the footer */
 header {

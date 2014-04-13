@@ -41,8 +41,13 @@ p.test{background-color:cyan; font-size:100px; text-align:center;}
 
 #wrap {min-height: 100%;}
 
-#main {overflow:auto;
-  padding-bottom: 150px;}  /* must be same height as the footer */
+#main {
+  width:90%;
+  background-color:pink;
+  overflow:auto;
+  padding-bottom: 150px;
+  margin:0 auto;
+  }  /* must be same height as the footer */
 
 header{height:150px;}
 #footer {
