@@ -1,62 +1,109 @@
-/*
-Syntax error: File to import not found or unreadable: _variables.scss.
-              Load path: /Users/keithmichaelgregg/Documents/Documents/NCI Coursework/Masters/ariaquen
-        on line 7 of ./app/assets/stylesheets/application.scss
-
-2: //global reset, vars, mixins etc... remember to import in the individual files
-3: @import "_reset.scss";
-4: 
-5: //
-6: 
-7: @import "_variables.scss";
-8: 
-9: @import "_mixins.scss";
-10: 
-11: @import "_functions.scss";
-12: 
-
-Backtrace:
-./app/assets/stylesheets/application.scss:7
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/tree/import_node.rb:66:in `rescue in import'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/tree/import_node.rb:45:in `import'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/tree/visitors/perform.rb:283:in `visit_import'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/stack.rb:79:in `block in with_base'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/stack.rb:121:in `with_frame'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/stack.rb:79:in `with_base'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/tree/visitors/perform.rb:151:in `visit'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/tree/root_node.rb:20:in `render'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/engine.rb:274:in `render'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/plugin/compiler.rb:414:in `update_stylesheet'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/plugin/compiler.rb:186:in `each'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/plugin/compiler.rb:393:in `on_file_changed'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/lib/sass/plugin/compiler.rb:248:in `block in watch'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/vendor/listen/lib/listen/adapter.rb:252:in `call'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/vendor/listen/lib/listen/adapter.rb:252:in `report_changes'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/vendor/listen/lib/listen/adapter.rb:321:in `poll_changed_directories'
-/Users/keithmichaelgregg/.rvm/gems/ruby-1.9.3-p484/gems/sass-3.3.4/vendor/listen/lib/listen/adapter.rb:297:in `block in start_poller'
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: _variables.scss.\A               Load path: /Users/keithmichaelgregg/Documents/Documents/NCI Coursework/Masters/ariaquen\A         on line 7 of ./app/assets/stylesheets/application.scss\A \A 2: //global reset, vars, mixins etc... remember to import in the individual files\A 3: @import \"_reset.scss\";\A 4: \A 5: //\A 6: \A 7: @import \"_variables.scss\";\A 8: \A 9: @import \"_mixins.scss\";\A 10: \A 11: @import \"_functions.scss\";\A 12: "; }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  height: 100%; }
+
+body {
+  color: #336699;
+  font-family: sans-serif;
+  height: 100%; }
+
+ul li {
+  list-style: none; }
+
+#loginbox {
+  float: right;
+  width: 30%;
+  padding: 10px;
+  background-color: rgba(133, 224, 133, 0.9); }
+  #loginbox div {
+    float: right;
+    font-family: sans-serif;
+    font-size: 0.9em; }
+    #loginbox div ul {
+      list-style: none;
+      float: right; }
+      #loginbox div ul li {
+        float: left;
+        padding-right: 5px; }
+
+p.test {
+  background-color: cyan;
+  font-size: 100px;
+  text-align: center; }
+
+#wrap {
+  min-height: 100%; }
+
+#main {
+  width: 90%;
+  background-color: pink;
+  overflow: auto;
+  padding-bottom: 150px;
+  margin: 0 auto; }
+
+/* must be same height as the footer */
+header {
+  height: 150px; }
+
+#footer {
+  position: relative;
+  margin-top: -150px;
+  /* negative value of footer height */
+  height: 150px;
+  clear: both;
+  width: 100%;
+  background-color: cyan; }
+  #footer p {
+    color: white; }
+
+.javascript_includes {
+  display: none; }
+
+p {
+  color: #336699; }
