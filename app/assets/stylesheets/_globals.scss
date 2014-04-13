@@ -3,8 +3,12 @@
 @import "_mixins.scss";
 @import "_functions.scss";
 
+html {height:100%;}
+
 body{
   color:$primary-color;
+  font-family:sans-serif;
+  height:100%;
 }
 
 ul{
@@ -35,3 +39,20 @@ ul{
 
 p.test{background-color:cyan; font-size:100px; text-align:center;}
 
+#wrap {min-height: 100%;}
+
+#main {overflow:auto;
+  padding-bottom: 150px;}  /* must be same height as the footer */
+
+header{height:150px;}
+#footer {
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  clear:both;
+  width:100%;
+  background-color:cyan;
+    p{color:white;}
+  } 
+
+.javascript_includes{display:none;}

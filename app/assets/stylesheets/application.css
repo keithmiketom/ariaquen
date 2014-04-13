@@ -45,8 +45,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+html {
+  height: 100%; }
+
 body {
-  color: #336699; }
+  color: #336699;
+  font-family: sans-serif;
+  height: 100%; }
 
 ul li {
   list-style: none; }
@@ -71,6 +76,31 @@ p.test {
   background-color: cyan;
   font-size: 100px;
   text-align: center; }
+
+#wrap {
+  min-height: 100%; }
+
+#main {
+  overflow: auto;
+  padding-bottom: 150px; }
+
+/* must be same height as the footer */
+header {
+  height: 150px; }
+
+#footer {
+  position: relative;
+  margin-top: -150px;
+  /* negative value of footer height */
+  height: 150px;
+  clear: both;
+  width: 100%;
+  background-color: cyan; }
+  #footer p {
+    color: white; }
+
+.javascript_includes {
+  display: none; }
 
 p {
   color: #336699; }

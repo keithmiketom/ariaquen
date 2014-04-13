@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!--[if !IE 7]><style type="text/css"> #wrap {display:table;height:100%}</style><![endif]-->
   <title>Ariaquen</title>
 
   <%= stylesheet_link_tag    "application", :media => "all" %>
@@ -21,34 +22,27 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div id="wrap">
+		<%= render 'layouts/header' %>
 
-<p class="notice"><%= notice %></p> 
-<p class="alert"><%= alert %></p>
 
-<section id="loginbox">
-	<% if user_signed_in? %> 
- 		<div>Signed in as... <%= current_user.email %> (<%= link_to 'Sign out', destroy_user_session_path, :method => :delete  %>)</div> 
-	<% else %> 
- 		<%= link_to 'Register', new_user_registration_path %> or <%= link_to 'Sign in', new_user_session_path %> 
-	<% end %> 
-<div class="session">
-	<ul>
-		<li><%= link_to 'Login', new_user_session_path %></li> 
-		<li><%= link_to 'Logout', destroy_user_session_path, :method => :delete %></li>
-	</ul>
-</div>
-</section>
-<%= yield %>
-
-<p class="test">yolo</p>
+	
+	<main id="main">
+		<div class="alerts">
+				<p class="notice"><%= notice %></p> 
+				<p class="alert"><%= alert %></p>
+		</div>
+		<%= yield %>
+	
+		<p class="test">this is dummy text to test if sass is updating?</p>
+	</main>
+</div><!--end of wrap-->
+<%= render 'layouts/footer' %>
+<section class="javascript_includes">
   <%= javascript_include_tag "application" %>
+</section>
 
 
-
-
-
-
-<%= javascript_include_tag "application" %>
 
 </body>
 </html>
