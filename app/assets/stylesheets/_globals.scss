@@ -11,11 +11,6 @@ body{
   height:100%;
 }
 
-ul{
-  li{
-    list-style:none;
-  }
-}
 
 #loginbox{
   float:right;
@@ -37,7 +32,7 @@ ul{
   }
 }
 
-p.test{background-color:cyan; font-size:100px; text-align:center;}
+p.test{background-color:cyan; font-size:100px; text-align:center;clear:both;}
 
 #wrap {min-height: 100%;}
 
