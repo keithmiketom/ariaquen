@@ -1,10 +1,9 @@
 //this partial is full of site wude custom code
 
-html {height:100%;}
+html {height:100%; font-family: 'ProximaNovaLtLight';}
 
 body{
   color:$primary-color;
-  font-family:sans-serif;
   height:100%;
 }
 
@@ -16,7 +15,7 @@ body{
   background-color:hsla(120, 60, 70, 0.9); //need to choose colour palette for site 
   div{
     float:right;
-    font-family:sans-serif;
+    font-family: 'ProximaNovaLtLight';
     font-size:0.9em;
       ul{
         list-style:none;

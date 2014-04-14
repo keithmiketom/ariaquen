@@ -3,6 +3,7 @@
 @import "bourbon/_bourbon.scss";//must be the first file in the list.
 //global reset must be first in code as it resets the vendor defaults
 @import "_reset.scss";
+@import "_fonts.scss";
 
 //variables, mixins, functions and global styles and grid with skeleton.css
 
