@@ -1,29 +1,16 @@
 Ariaquen::Application.routes.draw do
-
-
-
-
-
-
-
   get "site/splash"
-
   get "site/home"
-
   get "site/contact"
-
   get "site/about"
-
   get "site/store_locator"
-
   get "site/blog"
-
   get "site/gallery"
-
   get "site/affiliates"
-
   get "site/testimonials"
 
+
+  resources :site
   resources :categories, :except => [:index, :show]
 
   resources :forums, :except => :index do
@@ -38,149 +25,55 @@ Ariaquen::Application.routes.draw do
 
   end
 
-
-
-
-
   resources :userprofiles
-
 
 
   #get 'tags/:tag', to: 'articles#index', as: :tag
 
-  
-
   get 'tags/:tag' => 'articles#index', :as => :tag
 
-
-
   get "orderproducts/index"
-
-
-
   get "orderproducts/show"
-
-
-
   get "orderproducts/new"
-
-
-
   get "orderproducts/edit"
 
 
-
   devise_for :users do 
-
     resources :orders 
-
   end
-
 
 
   resources :orders do 
-
     resources :orderproducts 
-
   end
-
-
 
   resources :articles do
-
     resources :comments
-
   end
-
-
-
-  
 
   get "cart/index" 
 
-
-
   resources :products
 
-  
-
+ 
   match '/search_by_category/:product/:gender' => 'products#search_by_category'
-
-  
-
   match '/check', :controller=>'primes', :action=>'checkprime'
-
-  
-
   match '/validate', :controller=>'primes', :action=>'isprime'
-
-    
-
   match '/checkout' => 'cart#createOrder'
 
-  
-
   match '/cart' => 'cart#index' 
-
-
-
   match '/cart/:id' => 'cart#add' 
-
-  
-
   match '/cart/remove/:id' => 'cart#remove'
-
-  
-
   match '/clearCart' => 'cart#clearCart'
-
-
-
   match '/myuserprofile' => 'userprofiles#myuserprofile'
-
-  
-
   match '/search' => 'products#index'
-
-  
-
   match '/product_category/:id' => 'products#product_category'
-
+  match '/about' => 'site#about'
 
 
   root :to => "home#index"
 
-  
 
-  
-
-  
-
-  # The priority is based upon order of creation:
-
-  # first created -> highest priority.
-
-
-
-  # Sample of regular route:
-
-  #   match 'products/:id' => 'catalog#view'
-
-  # Keep in mind you can assign values other than :controller and :action
-
-
-
-  # Sample of named route:
-
-  #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
-
-  # This route can be invoked with purchase_url(:id => product.id)
-
-
-
-  # Sample resource route (maps HTTP verbs to controller actions automatically):
-
-  #   resources :products
 
 
 

@@ -103,6 +103,15 @@ header {
 .javascript_includes {
   display: none; }
 
+.fancy_title {
+  color: orange; }
+  .fancy_title .char1 {
+    font-size: 1.4em;
+    color: yellow; }
+  .fancy_title .char2 {
+    font-size: 1.3em;
+    color: green; }
+
 /*
 * Skeleton V1.2
 * Copyright 2011, Dave Gamache
