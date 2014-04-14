@@ -1,17 +1,23 @@
-@import "bourbon/_bourbon.scss";
-//global reset, vars, mixins etc... remember to import in the individual files
+//only put in file links. ALL CSS/SCSS should be saved in its own module, for ease of update. 
+//Application.CSS updates itself automatically
+@import "bourbon/_bourbon.scss";//must be the first file in the list.
+//global reset must be first in code as it resets the vendor defaults
 @import "_reset.scss";
 @import "_fonts.scss";
+
+//variables, mixins, functions and global styles and grid with skeleton.css
+
 @import "_variables.scss";
 @import "_mixins.scss";
-
 @import "_functions.scss";
 @import "_globals.scss";
-
 @import "skeleton/_skeleton.scss";
-//specific pages
+
+
+//specific pages: reference specific code specific to each page here. 
+
 @import "pages/_home.scss";
 //@import "pages/_products.scss";
 
 
-p {color:$primary-color;} 
+

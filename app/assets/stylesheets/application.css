@@ -97,7 +97,58 @@ body {
       float: right; }
       #loginbox div ul li {
         float: left;
-        padding-right: 0.9em; }
+        padding-right: 0.9em;
+        border: 1px solid #8a517a;
+        border-bottom: 1px solid #814151;
+        border-radius: 5px;
+        box-shadow: inset 0 1px 0 0 #ffddd7;
+        color: #333333;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: pink;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, pink), color-stop(50%, #c78eaa), color-stop(50%, #a9759b), color-stop(100%, #b07a9d));
+        background-image: -webkit-linear-gradient(top, pink 0%, #c78eaa 50%, #a9759b 50%, #b07a9d 100%);
+        background-image: linear-gradient(to bottom,pink 0%, #c78eaa 50%, #a9759b 50%, #b07a9d 100%);
+        padding: 8px 20px;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: 0 -1px 1px #ffd4dc;
+        color: white;
+        text-decoration: none; }
+        #loginbox div ul li:hover:not(:disabled) {
+          cursor: pointer;
+          background-color: #f2b1b9;
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2b1b9), color-stop(50%, #bd8298), color-stop(50%, #a26b89), color-stop(100%, #a9708c));
+          background-image: -webkit-linear-gradient(top, #f2b1b9 0%, #bd8298 50%, #a26b89 50%, #a9708c 100%);
+          background-image: linear-gradient(to bottom,#f2b1b9 0%, #bd8298 50%, #a26b89 50%, #a9708c 100%); }
+        #loginbox div ul li:active:not(:disabled) {
+          box-shadow: inset 0 0 20px 0 #904c51, 0 1px 0 white; }
+        #loginbox div ul li:hover {
+          border: 1px solid #8a84a4;
+          border-bottom: 1px solid #81747b;
+          border-radius: 5px;
+          box-shadow: inset 0 1px 0 0 white;
+          color: #333333;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: bold;
+          background-color: #fff3f5;
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff3f5), color-stop(50%, #c7c1d4), color-stop(50%, #a9a8c5), color-stop(100%, #b0adc7));
+          background-image: -webkit-linear-gradient(top, #fff3f5 0%, #c7c1d4 50%, #a9a8c5 50%, #b0adc7 100%);
+          background-image: linear-gradient(to bottom,#fff3f5 0%, #c7c1d4 50%, #a9a8c5 50%, #b0adc7 100%);
+          padding: 8px 20px;
+          text-align: center;
+          text-decoration: none;
+          text-shadow: 0 -1px 1px white; }
+          #loginbox div ul li:hover:hover:not(:disabled) {
+            cursor: pointer;
+            background-color: #f2e4e3;
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2e4e3), color-stop(50%, #bdb5c2), color-stop(50%, #a29eb3), color-stop(100%, #a9a3b6));
+            background-image: -webkit-linear-gradient(top, #f2e4e3 0%, #bdb5c2 50%, #a29eb3 50%, #a9a3b6 100%);
+            background-image: linear-gradient(to bottom,#f2e4e3 0%, #bdb5c2 50%, #a29eb3 50%, #a9a3b6 100%); }
+          #loginbox div ul li:hover:active:not(:disabled) {
+            box-shadow: inset 0 0 20px 0 #907f7b, 0 1px 0 white; }
 
 p.test {
   background-color: cyan;
@@ -170,6 +221,9 @@ nav ul li {
 
 #main {
   background-color: cyan; }
+
+p {
+  color: #336699; }
 
 /*
 * Skeleton V1.2
@@ -570,6 +624,3 @@ img {
 p.hello {
   float: left;
   width: 40%; }
-
-p {
-  color: #336699; }
