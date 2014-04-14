@@ -19,7 +19,8 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  /*font: inherit; */
+  font-family: 'ProximaNovaThThin';
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
@@ -112,7 +113,6 @@ html {
 
 body {
   color: #336699;
-  font-family: 'ProximaNovaThThin';
   height: 100%; }
 
 #loginbox {
