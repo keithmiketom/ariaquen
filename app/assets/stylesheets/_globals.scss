@@ -12,7 +12,7 @@ body{
 #loginbox{
   float:right;
   width:30%;
-  padding:10px;
+  padding:2em;
   background-color:hsla(120, 60, 70, 0.9);
   div{
     float:right;
@@ -23,18 +23,17 @@ body{
         float:right;
         li{
           float:left;
-          padding-right:5px;
+          padding-right:0.9em;;
         }
       }
   }
 }
 
-p.test{background-color:cyan; font-size:100px; text-align:center;clear:both;}
+p.test{background-color:cyan; font-size:4em; text-align:center;clear:both;}
 
-#wrap {min-height: 100%;}
-
+#wrap {min-height: 100%;margin-bottom:10px;}
+//width of main controlled by skeleton classes
 #main {
-  width:90%;
   background-color:pink;
   overflow:auto;
   padding-bottom: 150px;
@@ -59,4 +58,9 @@ header{height:150px;}
   color:orange;
     .char1{font-size:1.4em; color:yellow;}
     .char2{font-size:1.3em; color:green; }  
+}
+nav {
+  ul{
+    li{@include shiny(cyan);}
+  }
 }

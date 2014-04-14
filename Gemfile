@@ -25,7 +25,7 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
+#gem 'thin'
 gem 'bourbon' #Sass Framework
 gem 'jquery-rails'
 

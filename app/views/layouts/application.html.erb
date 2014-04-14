@@ -22,19 +22,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div id="wrap">
-		<%= render 'layouts/header' %>
+	<div id="wrap" class="container">
+		<%= render 'layouts/header' %> 
 
 
 	
-	<main id="main">
+	<main id="main" class="container">
 		<div class="alerts">
 				<p class="notice"><%= notice %></p> 
 				<p class="alert"><%= alert %></p>
 		</div>
 		<%= yield %>
 	
-		<p class="test">this is dummy text to test if sass is updating?</p>
+		<p class="test twelve columns">this is dummy text to test if sass is updating?</p>
 	</main>
 </div><!--end of wrap-->
 <%= render 'layouts/footer' %>

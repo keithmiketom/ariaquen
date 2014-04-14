@@ -1,4 +1,5 @@
 <header>
+	<%= render 'layouts/nav'%>
 	<section id="loginbox">
 		<% if user_signed_in? %> 
 	 		<div>Signed in as... <%= current_user.email %> (<%= link_to 'Sign out', destroy_user_session_path, :method => :delete  %>)</div> 
