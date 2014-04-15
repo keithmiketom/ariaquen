@@ -1,10 +1,13 @@
 //this partial is full of site wude custom code
 
-html {height:100%; font-family: 'ProximaNovaLtLight';}
+html {height:100%;font-family:sans-serif;}
 
 body{
   color:$primary-color;
   height:100%;
+  p{
+     font-family: 'ProximaNovaLtLight';
+  }
 }
 
 
@@ -24,12 +27,14 @@ body{
           float:left;
           padding-right:0.9em;
           @include shiny(pink);
-          color:white;
-          text-decoration:none;
-          &:hover{
-            @include shiny(lighten(pink, 10%));
-            
-          }
+            &:hover{
+              @include shiny(lighten(pink, 10%));
+             }
+            a{
+                color:white;
+                text-decoration:none;
+            }
+           
         }
       }
   }
@@ -67,10 +72,12 @@ header{height:150px;}
 }
 nav {
   ul{
-    li{@include shiny(cyan);}
+    li{@include shiny(cyan); 
+     
+    }
   }
 }
 
-#main{background-color:cyan;}
+
 //inline elements styling
 p {color:$primary-color;} 

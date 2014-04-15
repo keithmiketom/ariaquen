@@ -1,0 +1,29 @@
+aside.login{
+  
+    padding:5px;  
+    h2{
+      font-size:1.3em;
+      color:blue;
+      text-align:center;
+      font-variant:small-caps;  
+    }
+    div{
+      padding:5px, 5px, 10px;
+      
+    }
+    div.submit{
+      
+      a{
+        @include shiny(blue);
+        color:white;
+      }
+    }
+}
+.dev_links{
+  a{
+    @include shiny(pink);
+    font-size:0.5em;
+    text-decoration:none;
+    float:left;
+    }
+}
