@@ -567,6 +567,7 @@ header {
 /* must be same height as the footer */
 #footer {
   position: relative;
+  margin: 0 auto;
   margin-top: -150px;
   /* negative value of footer height */
   height: 150px;
@@ -575,6 +576,9 @@ header {
   background-color: #050311; }
   #footer p {
     color: white; }
+  #footer .f1 {
+    float: left;
+    width: 22%; }
 
 .javascript_includes {
   display: none; }

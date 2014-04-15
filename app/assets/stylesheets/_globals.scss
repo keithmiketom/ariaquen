@@ -65,14 +65,21 @@ header{
 
 #footer {
   position: relative;
+  margin: 0 auto;
   margin-top: -150px; /* negative value of footer height */
   height: 150px;
   clear:both;
   width:100%;
-  
+
   background-color:$sblack;
-    p{color:white;}
+    p{
+      color:white;
+      }
+ 
+   .f1 {float:left; width:22%;}
+
   } 
+
 
 .javascript_includes{display:none;}
 
