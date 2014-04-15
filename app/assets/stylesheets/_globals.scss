@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {font-family:sans-serif;}
   float:right;
   width:30%;
   padding:2em;
-  background-color:hsla(120, 60, 70, 0.9); //need to choose colour palette for site 
+  background-color:complement($nav-hover); //need to choose colour palette for site 
   div{
     float:right;
     font-family: 'ProximaNovaLtLight';
@@ -36,9 +36,9 @@ h1, h2, h3, h4, h5, h6 {font-family:sans-serif;}
         li{
           float:left;
           padding-right:0.9em;
-          @include shiny(pink);
+          @include shiny($primary-color);
             &:hover{
-              @include shiny(lighten(pink, 10%));
+              @include shiny(lighten($primary-color, 10%));
              }
             a{
                 color:white;
@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {font-family:sans-serif;}
   height: 150px;
   clear:both;
   width:100%;
-  background-color:cyan;
+  background-color:$sblack;
     p{color:white;}
   } 
 
