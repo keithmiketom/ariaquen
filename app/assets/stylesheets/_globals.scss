@@ -110,14 +110,16 @@ strong { font-weight: bold; }
 /* nav menu styles */
 #nav { 
   display: block; 
-  width: 280px; 
+  width: 160px; 
   margin: 0 auto;
+  font-size:82.5%;
 }
 
 #nav li {
   ul { 
   display: none; 
     li{
+      width:140px;
     a{
       display: block; 
         background: none;
@@ -125,6 +127,7 @@ strong { font-weight: bold; }
         padding-left:30px;
         font-size: 1.6em;
         text-decoration: none;
+        line-height:1;
         font-weight: bold;
         color: #000;
     }

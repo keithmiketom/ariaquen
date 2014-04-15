@@ -627,22 +627,26 @@ strong {
 /* nav menu styles */
 #nav {
   display: block;
-  width: 280px;
-  margin: 0 auto; }
+  width: 160px;
+  margin: 0 auto;
+  font-size: 82.5%; }
 
 #nav li ul {
   display: none; }
-  #nav li ul li a {
-    display: block;
-    background: none;
-    padding: 10px, 0px;
-    padding-left: 30px;
-    font-size: 1.6em;
-    text-decoration: none;
-    font-weight: bold;
-    color: #000; }
-  #nav li ul li:hover {
-    background: #e8e8e8; }
+  #nav li ul li {
+    width: 140px; }
+    #nav li ul li a {
+      display: block;
+      background: none;
+      padding: 10px, 0px;
+      padding-left: 30px;
+      font-size: 1.6em;
+      text-decoration: none;
+      line-height: 1;
+      font-weight: bold;
+      color: #000; }
+    #nav li ul li:hover {
+      background: #e8e8e8; }
 
 #nav > li > a {
   display: block;
