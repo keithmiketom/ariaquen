@@ -664,6 +664,205 @@ strong {
   color: #000; }
 
 /*/////////////////// JQUERY NAV STYLES END ////////////////////*/
+/*/////////////////// sign in/register page styles //////////////////////////*/
+.site-forms {
+  position: absolute;
+  top: 170px;
+  left: 130px;
+  width: 700px;
+  z-index: 1000; }
+
+.site-forms h2 {
+  font-family: EngraversGothic;
+  font-size: 2em; }
+
+.site-forms-title h2 {
+  font-family: EngraversGothic;
+  font-size: 2em;
+  top: 170px;
+  position: absolute;
+  left: 400px;
+  width: 700px;
+  z-index: 1000; }
+
+.email ul {
+  list-style-type: none;
+  font-family: EngraversGothic;
+  font-size: 2em; }
+
+.email ul li {
+  display: inline; }
+
+.email ul li input {
+  color: #000;
+  background-color: #D6D6D2;
+  border: none;
+  height: 26px;
+  width: 190px;
+  margin-top: 10px;
+  margin-right: 10px; }
+
+.email ul li label {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 0.8em; }
+
+.password ul {
+  list-style-type: none;
+  font-family: EngraversGothic;
+  font-size: 2em; }
+
+.password ul li {
+  display: inline; }
+
+.password ul li input {
+  color: #000;
+  background-color: #D6D6D2;
+  border: none;
+  height: 26px;
+  width: 190px;
+  margin-top: 10px;
+  margin-right: 10px; }
+
+.password ul li label {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 0.8em; }
+
+.phonenumber ul {
+  list-style-type: none;
+  font-family: EngraversGothic;
+  font-size: 2em; }
+
+.phonenumber ul li {
+  display: inline; }
+
+.phonenumber ul li input {
+  color: #000;
+  background-color: #D6D6D2;
+  border: none;
+  height: 26px;
+  width: 190px;
+  margin-top: 10px;
+  margin-right: 10px; }
+
+.phonenumber ul li label {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 0.8em; }
+
+.remember-me {
+  font-family: EngraversGothic;
+  font-size: 1.4em;
+  color: #000;
+  border: none;
+  height: 26px;
+  width: 190px;
+  margin-top: 10px;
+  margin-right: 10px; }
+
+.form-submit input {
+  font-family: EngraversGothic;
+  font-size: 1.6em;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  height: 26px;
+  width: 100px;
+  margin-top: 10px;
+  margin-right: 10px; }
+
+.form-submit ul {
+  list-style-type: none;
+  font-family: EngraversGothic;
+  font-size: 2em; }
+
+.form-submit ul li {
+  margin-top: 20px;
+  padding-top: 7px;
+  padding-bottom: 3px;
+  font-family: EngraversGothic;
+  font-size: 0.8em;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  height: 30px;
+  width: 100px; }
+
+.form-submit ul li a:link {
+  text-decoration: none !important; }
+
+@font-face {
+  font-family: "EngraversGothic";
+  src: url(fonts/EngraversGothic.ttf);
+  src: local("EngraversGothic"), url(fonts/EngraversGothic.ttf) format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+.forgotten-password {
+  font-family: EngraversGothic;
+  font-size: 1.4em;
+  margin-top: 15px; }
+
+.forgotten-password a:link {
+  text-decoration: none;
+  color: #000; }
+
+.forgotten-password a:visited {
+  text-decoration: none;
+  color: #000; }
+
+.forgotten-password a:hover {
+  text-decoration: underline;
+  color: #000; }
+
+.forgotten-password a:active {
+  text-decoration: none;
+  color: #000; }
+
+.register-link {
+  font-family: EngraversGothic;
+  font-size: 1.4em;
+  margin-top: 15px; }
+
+.register-link a:link {
+  text-decoration: none;
+  color: #000; }
+
+.register-link a:visited {
+  text-decoration: none;
+  color: #000; }
+
+.register-link a:hover {
+  text-decoration: underline;
+  color: #000; }
+
+.register-link a:active {
+  text-decoration: none;
+  color: #000; }
+
+.login-link {
+  font-family: EngraversGothic;
+  font-size: 1.4em;
+  margin-top: 15px; }
+
+.login-link a:link {
+  text-decoration: none;
+  color: #000; }
+
+.login-link a:visited {
+  text-decoration: none;
+  color: #000; }
+
+.login-link a:hover {
+  text-decoration: underline;
+  color: #000; }
+
+.login-link a:active {
+  text-decoration: none;
+  color: #000; }
+
+/*/////////////////// sign in/register page styles end //////////////////////////*/
 aside.login {
   padding: 5px; }
   aside.login h2 {
