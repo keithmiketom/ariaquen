@@ -5,6 +5,9 @@ html {height:100%;font-family:sans-serif;}
 body{
   color:$primary-color;
   height:100%;
+  font-size: 62.5%; 
+  line-height: 1; 
+  padding-bottom: 65px;
   p{
      font-family: 'ProximaNovaLtLight';
   }
@@ -88,22 +91,7 @@ p {color:$primary-color;}
 
 /*//////////// JQUERY NAV STYLES //////////////*/
 
-@font-face {
-
-font-family: "ROADWAY_";
-
-src: url(fonts/ROADWAY_.ttf);
-
-src: local("ROADWAY_"), url(fonts/ROADWAY_.ttf) format("truetype");
-
-font-weight: 900;
-
-font-style: normal;
-
-}
-
-
-body { font-size: 62.5%; line-height: 1; padding-bottom: 65px; font-family: Arial, Tahoma, sans-serif; }
+body { font-size: 62.5%; line-height: 1; padding-bottom: 65px; }
 
 article, aside, details, figcaption, figure,  hgroup, menu, nav,  { display: block; }
 ol, ul { list-style: none; }
@@ -136,7 +124,25 @@ strong { font-weight: bold; }
   margin: 0 auto;
 }
 
-#nav li { }
+#nav li {
+  ul { 
+  display: none; 
+    li{
+    a{
+      display: block; 
+        background: none;
+        padding: 10px, 0px, 10px, 30px;
+        font-size: 1.6em;
+        text-decoration: none;
+        font-weight: bold;
+        color: #000;
+    }
+    &:hover{
+      background: $nav-hover;
+    }
+    }
+  }
+ }
 
 #nav > li > a { 
   display: block; 
@@ -150,20 +156,6 @@ strong { font-weight: bold; }
   color: #000;
 }
 
-#nav li ul { display: none; }
 
-#nav li ul li a { 
-  display: block; 
-  background: none;
-  padding: 10px 0px;
-  padding-left: 30px;
-  font-size: 1.6em;
-  text-decoration: none;
-  font-weight: bold;
-  color: #000;
-}
-#nav li ul li a:hover {
-  background: #E8E8E8;
-}
 
 /*/////////////////// JQUERY NAV STYLES END ////////////////////*/
