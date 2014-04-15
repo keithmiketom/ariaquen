@@ -467,21 +467,27 @@ or wrap each row of columns in a <div class="row"> */
   width: 0;
   height: 0; }
 
-html {
-  height: 100%;
-  font-family: sans-serif; }
+html, body {
+  height: 100%; }
 
 body {
   color: #336699;
-  height: 100%;
+  font-family: sans-serif;
   font-size: 62.5%;
   line-height: 1;
   padding-bottom: 65px; }
   body p {
     font-family: 'ProximaNovaLtLight'; }
 
-html, body {
-  height: 100%; }
+#wrap {
+  min-height: 100%;
+  font-family: sans-serif; }
+
+header {
+  height: 150px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif; }
 
 #loginbox {
   float: right;
@@ -551,25 +557,14 @@ html, body {
           color: white;
           text-decoration: none; }
 
-p.test {
-  background-color: cyan;
-  font-size: 4em;
-  text-align: center;
-  clear: both; }
-
-#wrap {
-  min-height: 100%; }
-
 #main {
   background-color: pink;
   overflow: auto;
   padding-bottom: 250px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-family: sans-serif; }
 
 /* must be same height as the footer */
-header {
-  height: 150px; }
-
 #footer {
   position: relative;
   margin-top: -150px;
@@ -593,26 +588,8 @@ header {
     font-size: 1.3em;
     color: green; }
 
-/*
-nav {
-  ul{
-    li{@include shiny(cyan); 
-     
-    }
-  }
-}
-
-*/
-p {
-  color: #336699; }
-
 /*//////////// JQUERY NAV STYLES //////////////*/
-body {
-  font-size: 62.5%;
-  line-height: 1;
-  padding-bottom: 65px; }
-
-article, aside, details, figcaption, figure, hgroup, menu, nav {
+article, aside, details, figcaption, figure, menu, nav {
   display: block; }
 
 ol, ul {
@@ -658,7 +635,8 @@ strong {
   #nav li ul li a {
     display: block;
     background: none;
-    padding: 10px, 0px, 10px, 30px;
+    padding: 10px, 0px;
+    padding-left: 30px;
     font-size: 1.6em;
     text-decoration: none;
     font-weight: bold;

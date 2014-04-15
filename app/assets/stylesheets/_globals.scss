@@ -1,10 +1,10 @@
 //this partial is full of site wude custom code
 
-html {height:100%;font-family:sans-serif;}
+html, body {height:100%;}
 
 body{
   color:$primary-color;
-  height:100%;
+  font-family:sans-serif;
   font-size: 62.5%; 
   line-height: 1; 
   padding-bottom: 65px;
@@ -12,7 +12,14 @@ body{
      font-family: 'ProximaNovaLtLight';
   }
 }
-html, body {height:100%;}
+#wrap {min-height: 100%;font-family:sans-serif;}
+//width of main controlled by skeleton classes
+
+//Header styles//
+
+header{height:150px;}
+
+h1, h2, h3, h4, h5, h6 {font-family:sans-serif;}
 
 #loginbox{
   float:right;
@@ -43,18 +50,16 @@ html, body {height:100%;}
   }
 }
 
-p.test{background-color:cyan; font-size:4em; text-align:center;clear:both;}
 
-#wrap {min-height: 100%;}
-//width of main controlled by skeleton classes
 #main {
   background-color:pink;
   overflow:auto;
   padding-bottom: 250px;
   margin:0 auto;
+  font-family:sans-serif;
   }  /* must be same height as the footer */
 
-header{height:150px;}
+
 #footer {
   position: relative;
   margin-top: -150px; /* negative value of footer height */
@@ -67,33 +72,18 @@ header{height:150px;}
 
 .javascript_includes{display:none;}
 
-
+//lettering.js//
 .fancy_title{
+ 
   color:orange;
     .char1{font-size:1.4em; color:yellow;}
     .char2{font-size:1.3em; color:green; }  
 }
 
-/*
-nav {
-  ul{
-    li{@include shiny(cyan); 
-     
-    }
-  }
-}
-
-*/
-
-//inline elements styling
-p {color:$primary-color;} 
-
 
 /*//////////// JQUERY NAV STYLES //////////////*/
 
-body { font-size: 62.5%; line-height: 1; padding-bottom: 65px; }
-
-article, aside, details, figcaption, figure,  hgroup, menu, nav,  { display: block; }
+article, aside, details, figcaption, figure, menu, nav,  { display: block; }
 ol, ul { list-style: none; }
 
 blockquote, q { quotes: none; }
@@ -131,7 +121,8 @@ strong { font-weight: bold; }
     a{
       display: block; 
         background: none;
-        padding: 10px, 0px, 10px, 30px;
+        padding: 10px, 0px;
+        padding-left:30px;
         font-size: 1.6em;
         text-decoration: none;
         font-weight: bold;
