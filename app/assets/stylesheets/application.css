@@ -484,7 +484,8 @@ body {
   font-family: sans-serif; }
 
 header {
-  height: 150px; }
+  height: 150px;
+  border-bottom: 10px solid #050311; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: sans-serif; }
