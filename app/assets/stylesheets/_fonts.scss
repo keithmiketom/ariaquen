@@ -32,15 +32,20 @@
    font-style: normal; }
 
 @font-face {
-
 font-family: "ROADWAY_";
-
 src: url(fonts/ROADWAY_.ttf);
-
 src: local("ROADWAY_"), url(fonts/ROADWAY_.ttf) format("truetype");
-
 font-weight: 900;
-
 font-style: normal;
 
 }
+
+
+@font-face {
+  font-family: "EngraversGothic";
+  src: url(fonts/EngraversGothic.ttf);
+  src: local("EngraversGothic"), url(fonts/EngraversGothic.ttf) format("truetype");
+  font-weight: 900;
+  font-style: normal;
+   }
+  

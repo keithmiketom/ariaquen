@@ -81,6 +81,12 @@ table {
   src: local("ROADWAY_"), url(fonts/ROADWAY_.ttf) format("truetype");
   font-weight: 900;
   font-style: normal; }
+@font-face {
+  font-family: "EngraversGothic";
+  src: url(fonts/EngraversGothic.ttf);
+  src: local("EngraversGothic"), url(fonts/EngraversGothic.ttf) format("truetype");
+  font-weight: 900;
+  font-style: normal; }
 /*
 * Skeleton V1.2
 * Copyright 2011, Dave Gamache
@@ -593,7 +599,7 @@ header {
     color: green; }
 
 /*//////////// JQUERY NAV STYLES //////////////*/
-article, aside, details, figcaption, figure, menu, nav {
+nav {
   display: block; }
 
 ol, ul {
@@ -793,12 +799,6 @@ strong {
 .form-submit ul li a:link {
   text-decoration: none !important; }
 
-@font-face {
-  font-family: "EngraversGothic";
-  src: url(fonts/EngraversGothic.ttf);
-  src: local("EngraversGothic"), url(fonts/EngraversGothic.ttf) format("truetype");
-  font-weight: 900;
-  font-style: normal; }
 .forgotten-password {
   font-family: EngraversGothic;
   font-size: 1.4em;
@@ -863,71 +863,6 @@ strong {
   color: #000; }
 
 /*/////////////////// sign in/register page styles end //////////////////////////*/
-aside.login {
-  padding: 5px; }
-  aside.login h2 {
-    font-size: 1.3em;
-    color: blue;
-    text-align: center;
-    font-variant: small-caps; }
-  aside.login div {
-    padding: 5px, 5px, 10px; }
-  aside.login div.submit a {
-    border: 1px solid #0000ae;
-    border-bottom: 1px solid #000085;
-    border-radius: 5px;
-    box-shadow: inset 0 1px 0 0 #251dff;
-    color: white;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: bold;
-    background-color: blue;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, blue), color-stop(50%, #0000de), color-stop(50%, #0000cf), color-stop(100%, #0000d1));
-    background-image: -webkit-linear-gradient(top, blue 0%, #0000de 50%, #0000cf 50%, #0000d1 100%);
-    background-image: linear-gradient(to bottom,blue 0%, #0000de 50%, #0000cf 50%, #0000d1 100%);
-    padding: 8px 20px;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 0 -1px 1px #00008d;
-    color: white; }
-    aside.login div.submit a:hover:not(:disabled) {
-      cursor: pointer;
-      background-color: #0000ed;
-      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0000ed), color-stop(50%, #0000cc), color-stop(50%, #0000bd), color-stop(100%, #0000c0));
-      background-image: -webkit-linear-gradient(top, #0000ed 0%, #0000cc 50%, #0000bd 50%, #0000c0 100%);
-      background-image: linear-gradient(to bottom,#0000ed 0%, #0000cc 50%, #0000bd 50%, #0000c0 100%); }
-    aside.login div.submit a:active:not(:disabled) {
-      box-shadow: inset 0 0 20px 0 #000085, 0 1px 0 white; }
-
-.dev_links a {
-  border: 1px solid #8a517a;
-  border-bottom: 1px solid #814151;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 0 0 #ffddd7;
-  color: #333333;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: bold;
-  background-color: pink;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, pink), color-stop(50%, #c78eaa), color-stop(50%, #a9759b), color-stop(100%, #b07a9d));
-  background-image: -webkit-linear-gradient(top, pink 0%, #c78eaa 50%, #a9759b 50%, #b07a9d 100%);
-  background-image: linear-gradient(to bottom,pink 0%, #c78eaa 50%, #a9759b 50%, #b07a9d 100%);
-  padding: 8px 20px;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: 0 -1px 1px #ffd4dc;
-  font-size: 0.5em;
-  text-decoration: none;
-  float: left; }
-  .dev_links a:hover:not(:disabled) {
-    cursor: pointer;
-    background-color: #f2b1b9;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2b1b9), color-stop(50%, #bd8298), color-stop(50%, #a26b89), color-stop(100%, #a9708c));
-    background-image: -webkit-linear-gradient(top, #f2b1b9 0%, #bd8298 50%, #a26b89 50%, #a9708c 100%);
-    background-image: linear-gradient(to bottom,#f2b1b9 0%, #bd8298 50%, #a26b89 50%, #a9708c 100%); }
-  .dev_links a:active:not(:disabled) {
-    box-shadow: inset 0 0 20px 0 #904c51, 0 1px 0 white; }
-
 h1 {
   color: blue;
   text-align: center;
