@@ -1,16 +1,3 @@
-/*
-Plugin: jQuery Parallax
-Version 1.1.3
-Author: Ian Lunn
-Twitter: @IanLunn
-Author URL: http://www.ianlunn.co.uk/
-Plugin URL: http://www.ianlunn.co.uk/plugins/jquery-parallax/
-
-License: http://creativecommons.org/licenses/by-sa/3.0/ (Attribution Share Alike). Please attribute work to Ian Lunn simply by leaving these comments in the source code or if you'd prefer, place a link on your website to http://www.ianlunn.co.uk/.
-*/
-
-@charset "utf-8";
-/* CSS Document */
 
 @font-face {
     font-family: 'ProximaNovaThThin';
@@ -209,7 +196,7 @@ color: #FFF;
 .story{
   margin: 0 auto;
   min-width: 980px;
-  /*overflow: auto;*/
+
   width: 980px;
 }
 
