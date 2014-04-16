@@ -10,12 +10,11 @@
   z-index: 1000; }
 
 .site-forms h2 {
-  font-family: EngraversGothic;
-  font-size: 2em; }
+  @include devise-form-ul;
+   }
 
 .site-forms-title h2 {
-  font-family: EngraversGothic;
-  font-size: 2em;
+  @include devise-form-ul;
   top: 170px;
   position: absolute;
   left: 400px;
@@ -23,53 +22,51 @@
   z-index: 1000; }
 
 .email ul {
-  list-style-type: none;
-  font-family: EngraversGothic;
-  font-size: 2em; }
+  @include devise-form-ul;
+    li{
+      display: inline; 
+      input{
+          color: #000;
+          background-color: #D6D6D2;
+          border: none;
+          height: 26px;
+          width: 190px;
+          margin-top: 10px;
+          margin-right: 10px; 
+        }
+      label{
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size: 0.8em;
+      }  
+    }
+  }
 
-.email ul li {
-  display: inline; }
-
-.email ul li input {
-  color: #000;
-  background-color: #D6D6D2;
-  border: none;
-  height: 26px;
-  width: 190px;
-  margin-top: 10px;
-  margin-right: 10px; }
-
-.email ul li label {
-  padding-top: 3px;
-  padding-bottom: 3px;
-  font-size: 0.8em; }
 
 .password ul {
-  list-style-type: none;
-  font-family: EngraversGothic;
-  font-size: 2em; }
+  @include devise-form-ul;
+    li {
+      display: inline;
+      input {
+          color: #000;
+          background-color: #D6D6D2;
+          border: none;
+          height: 26px;
+          width: 190px;
+          margin-top: 10px;
+          margin-right: 10px; 
+          }
+          label {
+              padding-top: 3px;
+              padding-bottom: 3px;
+              font-size: 0.8em; 
+           }
+      }
+  }
 
-.password ul li {
-  display: inline; }
-
-.password ul li input {
-  color: #000;
-  background-color: #D6D6D2;
-  border: none;
-  height: 26px;
-  width: 190px;
-  margin-top: 10px;
-  margin-right: 10px; }
-
-.password ul li label {
-  padding-top: 3px;
-  padding-bottom: 3px;
-  font-size: 0.8em; }
 
 .phonenumber ul {
-  list-style-type: none;
-  font-family: EngraversGothic;
-  font-size: 2em; }
+  @include devise-form-ul; }
 
 .phonenumber ul li {
   display: inline; }

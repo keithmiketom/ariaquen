@@ -2,3 +2,8 @@
   border-right:1px solid $nav-hover;
   border-bottom:1px solid $nav-hover;
 }
+@mixin devise-form-ul {
+    list-style-type: none;
+    font-family: EngraversGothic;
+    font-size: 2em;
+}
