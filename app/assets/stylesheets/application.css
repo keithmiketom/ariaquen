@@ -675,7 +675,11 @@ strong {
   position: absolute;
   top: 170px;
   left: 130px;
-  width: 700px;
+  width: 40%;
+  background-color: white;
+  padding: 10px 2em 20px;
+  border-right: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
   z-index: 1000; }
 
 .site-forms h2 {
