@@ -7,3 +7,14 @@
     font-family: EngraversGothic;
     font-size: 2em;
 }
+
+@mixin login-input {
+    color: #000;
+    background-color: $grey-colour;
+  
+}
+
+@mixin li-detail{
+  
+  
+}

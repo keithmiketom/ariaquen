@@ -26,8 +26,7 @@
     li{
       display: inline; 
       input{
-          color: #000;
-          background-color: #D6D6D2;
+          @include login-input;
           border: none;
           height: 26px;
           width: 190px;
@@ -48,8 +47,7 @@
     li {
       display: inline;
       input {
-          color: #000;
-          background-color: #D6D6D2;
+          @include login-input;
           border: none;
           height: 26px;
           width: 190px;
@@ -72,8 +70,7 @@
   display: inline; }
 
 .phonenumber ul li input {
-  color: #000;
-  background-color: #D6D6D2;
+  @include login-input;
   border: none;
   height: 26px;
   width: 190px;

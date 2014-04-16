@@ -705,7 +705,7 @@ strong {
     display: inline; }
     .email ul li input {
       color: #000;
-      background-color: #D6D6D2;
+      background-color: #d6d6d2;
       border: none;
       height: 26px;
       width: 190px;
@@ -724,7 +724,7 @@ strong {
     display: inline; }
     .password ul li input {
       color: #000;
-      background-color: #D6D6D2;
+      background-color: #d6d6d2;
       border: none;
       height: 26px;
       width: 190px;
@@ -745,7 +745,7 @@ strong {
 
 .phonenumber ul li input {
   color: #000;
-  background-color: #D6D6D2;
+  background-color: #d6d6d2;
   border: none;
   height: 26px;
   width: 190px;
