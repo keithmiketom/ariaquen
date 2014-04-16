@@ -4,7 +4,7 @@
 //global reset must be first in code as it resets the vendor defaults
 @import "_reset.scss";
 @import "_fonts.scss";
-
+@import "_testCSS.scss"; //testing CSS with Sass
 //variables, mixins, functions and global styles and grid with skeleton.css
 @import "skeleton/_skeleton.scss";
 @import "_variables.scss";
@@ -16,7 +16,7 @@
 //specifics for plugins
 @import "_devise.scss";
 
-
+  
 
 //specific pages: reference specific code specific to each page here. 
 
