@@ -941,13 +941,12 @@ strong {
 
 #w {
   position: fixed;
+  background-color: white;
   font-family: ROADWAY_ !important;
-  left: -180px;
+  left: 10px;
   top: 90px;
-  width: 740px;
-  margin: 0 auto;
-  padding-top: 45px;
-  z-index: 1; }
+  width: 20%;
+  padding-top: 45px; }
 
 /* nav menu styles */
 #nav {
@@ -989,7 +988,7 @@ strong {
 .site-forms {
   position: absolute;
   top: 170px;
-  left: 130px;
+  left: 20%;
   width: 40%;
   background-color: white;
   padding: 10px 2em 20px;
@@ -1008,8 +1007,8 @@ strong {
   font-size: 2em;
   top: 170px;
   position: absolute;
-  left: 400px;
-  width: 700px;
+  left: 40%;
+  width: 44%;
   z-index: 1000; }
 
 .email ul {
@@ -1023,9 +1022,9 @@ strong {
       background-color: #d6d6d2;
       border: none;
       height: 26px;
-      width: 190px;
+      width: 50%;
       margin-top: 10px;
-      margin-right: 10px; }
+      margin-right: 3em; }
     .email ul li label {
       padding-top: 3px;
       padding-bottom: 3px;
@@ -1042,7 +1041,7 @@ strong {
       background-color: #d6d6d2;
       border: none;
       height: 26px;
-      width: 190px;
+      width: 50%;
       margin-top: 10px;
       margin-right: 10px; }
     .password ul li label {
@@ -1135,47 +1134,20 @@ strong {
   text-decoration: none;
   color: #000; }
 
-.register-link {
+.register-link, .login-link {
   font-family: EngraversGothic;
   font-size: 1.4em;
   margin-top: 15px; }
-
-.register-link a:link {
-  text-decoration: none;
-  color: #000; }
-
-.register-link a:visited {
-  text-decoration: none;
-  color: #000; }
-
-.register-link a:hover {
-  text-decoration: underline;
-  color: #000; }
-
-.register-link a:active {
-  text-decoration: none;
-  color: #000; }
-
-.login-link {
-  font-family: EngraversGothic;
-  font-size: 1.4em;
-  margin-top: 15px; }
-
-.login-link a:link {
-  text-decoration: none;
-  color: #000; }
-
-.login-link a:visited {
-  text-decoration: none;
-  color: #000; }
-
-.login-link a:hover {
-  text-decoration: underline;
-  color: #000; }
-
-.login-link a:active {
-  text-decoration: none;
-  color: #000; }
+  .register-link a, .login-link a {
+    color: #000; }
+    .register-link a:link, .login-link a:link {
+      text-decoration: none; }
+    .register-link a:visited, .login-link a:visited {
+      text-decoration: none; }
+    .register-link a:hover, .login-link a:hover {
+      text-decoration: underline; }
+    .register-link a:active, .login-link a:active {
+      text-decoration: none; }
 
 /*/////////////////// sign in/register page styles end //////////////////////////*/
 h1 {
