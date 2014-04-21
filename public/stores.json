@@ -1,0 +1,16 @@
+[ 
+    { 
+        "address": "1445 Foxworthy Ave, San Jose, CA", 
+        "name": "Giorgio's", 
+        "lat": "37.274647", 
+        "lng": "-121.892891", 
+        "distance": "19.87341148022" 
+    }, 
+    { 
+        "address": "4302 Moorpark Ave, San Jose, CA", 
+        "name": "Round Table Pizza", 
+        "lat": "37.315903", 
+        "lng": "-121.977928", 
+        "distance": "21.8619290343098" 
+    } 
+] 
