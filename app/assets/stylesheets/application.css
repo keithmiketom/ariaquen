@@ -633,13 +633,13 @@ strong {
   font-family: ROADWAY_ !important;
   left: 10px;
   top: 90px;
-  width: 20%;
+  width: 10%;
   padding-top: 45px; }
 
 /* nav menu styles */
 #nav {
   display: block;
-  width: 160px;
+  width: 10%;
   margin: 0 auto;
   font-size: 82.5%; }
 
