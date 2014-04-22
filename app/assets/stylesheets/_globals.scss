@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {font-family:sans-serif;}
   }
 }
 
-#wrap {min-height: 100%;font-family:sans-serif;margin-top:150px;}
+#wrap {min-height: 100%;font-family:sans-serif;margin-top:150px; margin-left: 20%;}
 //width of main controlled by skeleton classes
 
 //Header styles//
@@ -114,8 +114,10 @@ strong { font-weight: bold; }
   background-color:hsla(120, 100%, 100%, 0.8);
   font-family:ROADWAY_ !important;
   left:10px; 
-  top: 190px; 
+  top: 160px; 
+  bottom: 160px;
   width: 13%; 
+  min-width:150px;
   padding-top: 45px; 
   z-index:1000;
 }
