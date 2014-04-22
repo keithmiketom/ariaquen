@@ -87,6 +87,12 @@ table {
   src: local("EngraversGothic"), url(fonts/EngraversGothic.ttf) format("truetype");
   font-weight: 900;
   font-style: normal; }
+@font-face {
+  font-family: 'BebasNeueRegular';
+  src: url("fonts/BebasNeue-webfont.eot");
+  src: url("fonts/BebasNeue-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/BebasNeue-webfont.woff") format("woff"), url("fonts/BebasNeue-webfont.ttf") format("truetype"), url("fonts/BebasNeue-webfont.svg#BebasNeueRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 /*
 * Skeleton V1.2
 * Copyright 2011, Dave Gamache
@@ -560,9 +566,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #wrap {
   min-height: 100%;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  margin-top: 150px; }
 
 header {
+  background: #050311;
+  width: 100%;
   height: 150px;
   border-bottom: 10px solid #050311; }
 
@@ -627,14 +636,16 @@ strong {
   border: 0;
   max-width: 100%; }
 
+/*need to add media queries for this */
 #w {
   position: fixed;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   font-family: ROADWAY_ !important;
   left: 10px;
-  top: 90px;
-  width: 10%;
-  padding-top: 45px; }
+  top: 190px;
+  width: 13%;
+  padding-top: 45px;
+  z-index: 1000; }
 
 /* nav menu styles */
 #nav {

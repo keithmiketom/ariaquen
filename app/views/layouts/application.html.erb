@@ -5,6 +5,8 @@
   <title>Ariaquen</title>
 
   <%= stylesheet_link_tag    "application", :media => "all" %>
+  
+  <!-- we need to separate out the Javascript into the pages specificallly where they are needed -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
   <script src="//code.jquery.com/jquery-1.7.1.min.js"></script>
@@ -22,9 +24,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<%= render 'layouts/header' %> 
 	<div id="wrap" class="container">
 		
-		<%= render 'layouts/header' %> 
+		
 
 	<main id="main">
 		<div class="alerts">
