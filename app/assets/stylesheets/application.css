@@ -577,11 +577,17 @@ header {
   border-bottom: 10px solid #050311; }
 
 #main {
+  border-top: 15px solid #050311;
   background-color: pink;
   overflow: auto;
-  padding-bottom: 150px;
+  width: 100%;
+  padding: 15px 5px 150px;
+  min-height: 500px;
   margin: 0 auto;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  margin-bottom: 10px;
+  border-right: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8; }
 
 /* must be same height as the footer */
 #footer {

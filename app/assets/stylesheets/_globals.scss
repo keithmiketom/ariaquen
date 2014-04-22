@@ -58,11 +58,16 @@ header{
   }
 
 #main {
+  border-top:15px solid $sblack;
   background-color:pink;
   overflow:auto;
-  padding-bottom: 150px;
+  width:100%;
+  padding:15px 5px 150px ;
+  min-height:500px;
   margin:0 auto;
   font-family:sans-serif;
+  margin-bottom:10px;
+  @include subtle-border;
   }  /* must be same height as the footer */
 
 
