@@ -1,12 +1,15 @@
-.lb-album{
+ /*////////////////////// GALLERY STYLES ///////////////////////*/
+ 
+ 
+ .lb-album{
   width: 900px;
   margin: 0 auto;
   font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-   li{
-    float: left;
-    margin: 5px;
-    position: relative;
-  }
+}
+.lb-album li{
+  float: left;
+  margin: 5px;
+  position: relative;
 }
 .lb-album li > a,
 .lb-album li > a img{
@@ -18,7 +21,12 @@
   position: relative;
   padding: 10px;
   background: #f1d2c2;
-@include box-shadow;
+  -webkit-box-shadow: 1px 1px 2px #fff, 1px 1px 2px rgba(158,111,86,0.3) inset;
+  -moz-box-shadow: 1px 1px 2px #fff, 1px 1px 2px rgba(158,111,86,0.3) inset;
+  box-shadow: 1px 1px 2px #fff, 1px 1px 2px rgba(158,111,86,0.3) inset;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px 4px 4px 4px;
 }
 .lb-album li > a span{
   position: absolute;
@@ -165,7 +173,7 @@
 }
 .lb-next{
   margin-left: 6px;
-  background: transparent url(../images/arrows.png) no-repeat top right;
+  background: transparent url(../../images/arrows.png) no-repeat top right;
 }
 .lb-overlay:target {
   width: auto;
@@ -189,3 +197,5 @@ x:-o-prefocus, .lb-overlay img {
 }
 
   /*////////////////////// GALLERY STYLES END ///////////////////////*/
+ 
+ 
