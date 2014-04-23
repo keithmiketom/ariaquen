@@ -1,4 +1,7 @@
 Ariaquen::Application.routes.draw do
+  resources :designs
+
+
   get "site/splash"
   get "site/home"
   get "site/contact"
