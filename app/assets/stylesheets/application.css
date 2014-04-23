@@ -582,7 +582,7 @@ header {
   overflow: auto;
   width: 100%;
   padding: 15px 5px 150px;
-  min-height: 500px;
+  min-height: 900px;
   margin: 0 auto;
   font-family: sans-serif;
   margin-bottom: 10px;
@@ -609,6 +609,8 @@ header {
   display: none; }
 
 .fancy_title {
+  font-family: "EngraversGothic", arial, sans-serif;
+  font-size: 2.1em;
   color: orange; }
   .fancy_title .char1 {
     font-size: 1.4em;
@@ -693,12 +695,6 @@ strong {
 
 /*/////////////////// JQUERY NAV STYLES END ////////////////////*/
 /*////////////////////// GALLERY STYLES ///////////////////////*/
-@font-face {
-  font-family: 'BebasNeueRegular';
-  src: url("fonts/BebasNeue-webfont.eot");
-  src: url("fonts/BebasNeue-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/BebasNeue-webfont.woff") format("woff"), url("fonts/BebasNeue-webfont.ttf") format("truetype"), url("fonts/BebasNeue-webfont.svg#BebasNeueRegular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
 .lb-album {
   width: 900px;
   margin: 0 auto;
@@ -908,74 +904,6 @@ x:-o-prefocus, .lb-overlay img {
   height: 100%; }
 
 /*////////////////////// GALLERY STYLES END ///////////////////////*/
-#affiliates-container {
-  width: 750px;
-  margin: 10px auto; }
-
-#affiliates-headings {
-  position: absolute;
-  top: 120px;
-  left: 240px;
-  width: 200px;
-  z-index: 4000;
-  font-family: Engraversgothic;
-  font-size: 14pt;
-  text-align: center; }
-
-#user-wrap {
-  position: absolute;
-  top: 240px;
-  left: 240px;
-  width: 200px;
-  z-index: 4000;
-  font-family: Engraversgothic;
-  font-size: 14pt;
-  text-align: center; }
-
-#user-wrap p {
-  width: 320px; }
-
-#users li a:link {
-  color: #000;
-  text-decoration: none; }
-
-#users li a:visited {
-  color: #000;
-  text-decoration: none; }
-
-#users li a:hover {
-  color: #000;
-  text-decoration: underline; }
-
-#users li a:active {
-  color: #000;
-  text-decoration: none; }
-
-#feed {
-  position: absolute;
-  top: 100px;
-  left: 500px;
-  width: 400px;
-  color: #000;
-  float: left; }
-
-p#feed a {
-  width: 100px;
-  height: 100px;
-  border: 10px !important; }
-
-p#feed img {
-  width: 100px;
-  height: 100px;
-  border: 10px !important; }
-
-#feed span img {
-  position: absolute;
-  top: 195px;
-  left: 195px;
-  width: 30px;
-  height: 30px; }
-
 /*/////////////////// sign in/register page styles //////////////////////////*/
 .site-forms {
   position: absolute;
@@ -1150,3 +1078,73 @@ h1 {
 p.hello {
   float: left;
   width: 40%; }
+
+#affiliates-container {
+  width: 80%;
+  margin: -10px auto; }
+
+#affiliates-headings {
+  position: absolute;
+  top: 60px;
+  left: 16%;
+  width: 30%;
+  z-index: 4000;
+  font-family: Engraversgothic;
+  font-size: 1.6em;
+  text-align: center; }
+
+#user-wrap {
+  position: absolute;
+  top: 160px;
+  left: 17%;
+  width: 30%;
+  z-index: 4000;
+  font-family: Engraversgothic;
+  font-size: 14pt;
+  text-align: left; }
+
+#user-wrap p {
+  width: 320px; }
+
+#users li a:link {
+  color: #000;
+  text-decoration: none; }
+
+#users li a:visited {
+  color: #000;
+  text-decoration: none; }
+
+#users li a:hover {
+  color: #000;
+  text-decoration: underline; }
+
+#users li a:active {
+  color: #000;
+  text-decoration: none; }
+
+#feed {
+  position: absolute;
+  top: 100px;
+  left: 500px;
+  width: 400px;
+  color: #000;
+  float: left; }
+
+p#feed a {
+  width: 100px;
+  height: 100px;
+  border: 10px !important; }
+
+p#feed img {
+  width: 100px;
+  height: 100px;
+  border: 10px !important;
+  border-radius: 5px;
+  padding: 2px; }
+
+#feed span img {
+  position: absolute;
+  top: 195px;
+  left: 195px;
+  width: 30px;
+  height: 30px; }

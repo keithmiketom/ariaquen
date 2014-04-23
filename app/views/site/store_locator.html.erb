@@ -1,2 +1,44 @@
-<h1>Site#store_locator</h1>
-<p>Find me in app/views/site/store_locator.html.erb</p>
+<style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+var map;
+function initialize() {
+  // Create a simple map.
+  map = new google.maps.Map(document.getElementById('map-canvas'), {
+    zoom: 4,
+    center: {lat: -28, lng: 137.883}
+  });
+
+  // Load a GeoJSON from the same server as our demo.
+  map.data.loadGeoJson([ 
+    { 
+        "address": "1445 Foxworthy Ave, San Jose, CA", 
+        "name": "Giorgio's", 
+        "lat": "37.274647", 
+        "lng": "-121.892891", 
+        "distance": "19.87341148022" 
+    }, 
+    { 
+        "address": "4302 Moorpark Ave, San Jose, CA", 
+        "name": "Round Table Pizza", 
+        "lat": "37.315903", 
+        "lng": "-121.977928", 
+        "distance": "21.8619290343098" 
+    } 
+] );
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"> </div>
+  </body>
+</html>
