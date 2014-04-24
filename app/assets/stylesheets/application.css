@@ -619,17 +619,6 @@ header div.logo {
 .javascript_includes {
   display: none; }
 
-.fancy_title {
-  font-family: "EngraversGothic", arial, sans-serif;
-  font-size: 2.1em;
-  color: orange; }
-  .fancy_title .char1 {
-    font-size: 1.4em;
-    color: yellow; }
-  .fancy_title .char2 {
-    font-size: 1.3em;
-    color: green; }
-
 /*//////////// JQUERY NAV STYLES //////////////*/
 nav {
   display: block; }
@@ -705,6 +694,56 @@ strong {
   color: #000; }
 
 /*/////////////////// JQUERY NAV STYLES END ////////////////////*/
+.fancy_title {
+  font-family: "EngraversGothic", arial, sans-serif;
+  font-size: 2.1em;
+  color: orange; }
+  .fancy_title .char1 {
+    font-size: 1.4em;
+    color: yellow; }
+  .fancy_title .char2 {
+    font-size: 1.3em;
+    color: green; }
+  .fancy_title .char3 {
+    font-size: 1.3em;
+    color: red; }
+  .fancy_title .char4 {
+    font-size: 1.3em;
+    color: orange; }
+  .fancy_title .char5 {
+    font-size: 1.3em;
+    color: cyan; }
+  .fancy_title .char6 {
+    font-size: 1.3em;
+    color: black; }
+  .fancy_title .char7 {
+    font-size: 1.3em;
+    color: olive; }
+  .fancy_title .char8 {
+    font-size: 1.3em;
+    color: green; }
+  .fancy_title .char9 {
+    font-size: 1.3em;
+    color: green; }
+  .fancy_title .char10 {
+    font-size: 1.3em;
+    color: green; }
+  .fancy_title .char11 {
+    font-size: 1.3em;
+    color: olive; }
+  .fancy_title .char12 {
+    font-size: 1.3em;
+    color: green; }
+  .fancy_title .char13 {
+    font-size: 1.3em;
+    color: blue; }
+  .fancy_title .char14 {
+    font-size: 1.3em;
+    color: green; }
+  .fancy_title .char15 {
+    font-size: 1.3em;
+    color: blue; }
+
 /*/////////////////// sign in/register page styles //////////////////////////*/
 .site-forms {
   position: absolute;
@@ -896,7 +935,7 @@ p.hello {
 
 #user-wrap {
   position: absolute;
-  top: 160px;
+  top: 260px;
   left: 17%;
   width: 30%;
   z-index: 4000;
