@@ -1,23 +1,23 @@
 
 		var people = ([{
-			"name":"ZARA GLOBAL", 
-			"id":"44123801@N03"
+			"name":"ANNET PATJILA", 
+			"id":"31349962@N08"
 		},
 		{
-			"name":"LAUREN BECK",
-			"id":"34236437@N07"
+			"name":"TAIZ TEES",
+			"id":"29503902@N07"
 		},
 		{
-			"name":"REBECCA ADLER",
-			"id":"37583170@N07"
+			"name":"BROY CLOTHING",
+			"id":"90975346@N02"
 		},
 		{
-			"name":"RACHAEL SCROGGINS",
-			"id":"55457487@N00"
+			"name":"PABLO ABRIL SANCHEZ",
+			"id":"94524619@N08"
 		},
 		{
-			"name":"JOSEFINA ALAZRAKI",
-			"id":"7499921@N08"
+			"name":"FREDRIK SWAHN",
+			"id":"25709629@N06"
 		}]);
 
 		$(document).ready(function() {
@@ -28,7 +28,7 @@
 						+people[i].id+'\')">'+people[i].name+"</a></li>\n"
 				);
 			}
-			loadFlickr("44123801@N03");
+			loadFlickr("31349962@N08");
 		});
 
 function loadFlickr(flickrid)
