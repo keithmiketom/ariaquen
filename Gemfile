@@ -29,6 +29,7 @@ end
 gem 'bourbon' #Sass Framework
 gem 'jquery-rails'
 
+gem 'angular-rails'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
