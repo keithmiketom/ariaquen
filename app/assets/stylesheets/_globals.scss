@@ -337,5 +337,70 @@ section#jquery-gallery {
 
 /*////////////////// JQUERY GALLERY STYLES END ///////////////////*/
 
+/* **************************************************************************
+2.1               Fruit machine 
+********************************************************************************/
+#index img.lever{
+  border: none;
+}
+
+#index img.fm{
+  border: 3px solid #868788;
+}
+
+#index #pageWrapper
+{
+    z-index:1;
+  width: 700px;
+  margin-right: auto;
+  margin-left: auto;  
+  border-radius:30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+  background-color:#fff;
+  margin:0 auto ;
+  padding:30px;
+}
+
+
+#index #mastHead{
+  height: 200px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(../images/masthead.jpg);
+  background-position:  center top;
+  background-repeat: no-repeat;
+}
+#index #rollers{
+
+  margin: 0 auto;
+  background-color: transparent;
+
+}
+
+
+#index #rollers img{
+border-radius:40px;
+  -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;}
+
+#index #lever{
+  margin-top: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#index .links{
+  margin-left:30px;
+  margin-bottom:-30px;}
+
+
+/*/////////////////////// fruit machine end /////////////////////////////*/
+
   
  
