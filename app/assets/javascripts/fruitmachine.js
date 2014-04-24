@@ -1,5 +1,5 @@
 ﻿$(document).ready();
-var pix = ["1.gif", "2.gif", "3.gif", "4.gif"]
+var pix = ["../../assets/1_thumbs.jpg", "../../assets/2_thumbs.jpg", "../../assets/10_thumbs.jpg", "../../assets/4_thumbs.jpg"]
 
 var arrayNum = 0;
 var speed = 100;
@@ -13,7 +13,7 @@ function startgame(leverPic) {
     rndB = Math.round(Math.random() * 3) + 12;
     rndC = Math.round(Math.random() * 3);
     count = 48;
-    leverPic.setAttribute("src", "images/navs/lever2.jpg");
+    leverPic.setAttribute("src", "../assets/lever2.jpg");
     cycles();
     var time = setTimeout("resetLever();", 750);
 }
@@ -50,7 +50,7 @@ function changePic(x) {
 
 function resetLever() {
     lever = document.getElementById("leverpic");
-    lever.setAttribute("src", "images/navs/lever1.jpg");
+    lever.setAttribute("src", "../assets/lever1.jpg");
 }
 
 function endgame() {
