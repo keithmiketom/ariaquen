@@ -1,5 +1,4 @@
 
-
 		var people = ([{
 			"name":"ZARA GLOBAL", 
 			"id":"44123801@N03"
@@ -68,3 +67,10 @@ function loadFlickr(flickrid)
 		dataType:'jsonp'
 	});
 }
+
+
+                 $(document).ready(function () {
+                     $(".fancy_title").lettering().children("span").css({ 'display': 'inline-block', '-webkit-transform': 'rotateX(-15deg)' });
+                 });
+         
+ 

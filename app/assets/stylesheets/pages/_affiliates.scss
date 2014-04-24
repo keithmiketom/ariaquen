@@ -15,7 +15,9 @@
   font-family:Engraversgothic;
   font-size:1.6em;
   text-align:center;
-  
+  p{
+    margin-top:80px;
+  }
 }
 
 #user-wrap {
@@ -65,4 +67,8 @@ p#feed img {
 
 #feed span img{position:absolute; top:195px; left:195px; width:30px; height:30px;}
 
+
+div.tri{
+  @include triangle(1px, red, left);
+}
 //////////////////// affiliates end ////////////////////

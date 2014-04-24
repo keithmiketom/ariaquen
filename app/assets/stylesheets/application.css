@@ -697,7 +697,8 @@ strong {
 .fancy_title {
   font-family: "EngraversGothic", arial, sans-serif;
   font-size: 2.1em;
-  color: orange; }
+  color: orange;
+  text-shadow: #9c8b26 -4px 4px 0; }
   .fancy_title .char1 {
     font-size: 1.4em;
     color: yellow; }
@@ -743,6 +744,38 @@ strong {
   .fancy_title .char15 {
     font-size: 1.3em;
     color: blue; }
+
+h2.fancy_title {
+  color: White;
+  font-family: sans-serif;
+  font-size: 2.8em;
+  margin: 10px 0 -50px;
+  background-color: rgba(191, 64, 149, 0.5);
+  border-radius: 60px; }
+
+.fancy_title .char1, .fancy_title .char5, .fancy_title .char9 {
+  color: #9947eb; }
+
+.fancy_title .char1:hover, .fancy_title .char5:hover, .fancy_title .char9:hover {
+  color: #477eeb;
+  -webkit-transform: rotate(85deg) !important; }
+
+.fancy_title .char2, .fancy_title .char6, .fancy_title .char10 {
+  color: #f5f53d;
+  -webkit-transform: rotate(15deg) !important;
+  margin-left: -5px; }
+
+.fancy_title .char2:hover, .fancy_title .char6:hover, .fancy_title .char10:hover {
+  color: #3df5b8;
+  -webkit-transform: rotate(-15deg) !important; }
+
+.fancy_title .char3, .fancy_title .char7, .fancy_title .char11 {
+  color: #47ebeb;
+  margin-left: -5px; }
+
+.fancy_title .char3:hover, .fancy_title .char7:hover, .fancy_title .char11:hover {
+  color: #ffb366;
+  -webkit-transform: rotate(15deg) !important; }
 
 /*/////////////////// sign in/register page styles //////////////////////////*/
 .site-forms {
@@ -932,6 +965,8 @@ p.hello {
   font-family: Engraversgothic;
   font-size: 1.6em;
   text-align: center; }
+  #affiliates-headings p {
+    margin-top: 80px; }
 
 #user-wrap {
   position: absolute;
@@ -988,6 +1023,14 @@ p#feed img {
   left: 195px;
   width: 30px;
   height: 30px; }
+
+div.tri {
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 0.5px;
+  border-right-color: red; }
 
 /*////////////////////// GALLERY STYLES ///////////////////////*/
 .lb-album {
