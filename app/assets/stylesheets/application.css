@@ -698,6 +698,173 @@ strong {
   color: #000; }
 
 /*/////////////////// JQUERY NAV STYLES END ////////////////////*/
+/*/////////////////// products show styles //////////////////////////*/
+.title a {
+  color: #000; }
+
+.sort-title {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.4em;
+  color: #000 !important;
+  text-decoration: underline; }
+
+.image {
+  padding-top: 20px;
+  text-align: center; }
+
+.title {
+  font-size: 1.2em;
+  color: #000 !important;
+  text-align: center; }
+
+#image1 {
+  position: absolute;
+  left: 382px;
+  z-index: 1500;
+  top: 195px; }
+
+a.fancybox img {
+  height: 180px;
+  width: 280px; }
+
+a#show-product img {
+  height: 430px;
+  width: 350px; }
+
+a.description {
+  padding-bottom: 20px; }
+
+#image2 {
+  position: absolute;
+  left: 382px;
+  z-index: 1500;
+  top: 735px; }
+
+#image3 {
+  position: absolute;
+  left: 382px;
+  z-index: 1500;
+  top: 1280px; }
+
+#image4 {
+  position: absolute;
+  left: 382px;
+  z-index: 1500;
+  top: 1823px; }
+
+#image5 {
+  position: absolute;
+  left: 382px;
+  z-index: 1500;
+  top: 2365px; }
+
+#product-text {
+  position: absolute;
+  left: 800px;
+  top: 230px;
+  width: 230px; }
+
+.show-product-name {
+  font-family: arial;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px; }
+
+.show-product-id {
+  font-family: arial;
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #808080; }
+
+.show-product-detail {
+  font-family: arial;
+  font-size: 1em;
+  margin-bottom: 10px;
+  line-height: 1.6em; }
+
+.show-product-price {
+  font-family: arial;
+  font-size: 1em;
+  margin-bottom: 10px;
+  line-height: 1.6em; }
+
+.show-product-color {
+  font-family: arial;
+  font-size: 1em;
+  margin-bottom: 10px;
+  line-height: 1.6em;
+  font-weight: bold; }
+
+#addtocart-link1 {
+  position: absolute !important;
+  top: 400px !important;
+  left: 800px !important;
+  font-family: EngraversGothic;
+  font-size: 1.6em;
+  background-color: #000;
+  color: #fff;
+  width: 120px;
+  height: 25px;
+  line-height: 1.6em;
+  text-align: center; }
+
+#addtocart-link1 a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: #fff; }
+
+#addtocart-link2 {
+  position: absolute !important;
+  top: 430px !important;
+  left: 800px !important;
+  font-family: EngraversGothic;
+  font-size: 1.6em;
+  background-color: #000;
+  color: #fff;
+  width: 120px;
+  height: 25px;
+  line-height: 1.6em;
+  text-align: center; }
+
+#addtocart-link2 a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: #fff; }
+
+#addtocart-link3 {
+  position: absolute !important;
+  top: 460px !important;
+  left: 800px !important;
+  font-family: EngraversGothic;
+  font-size: 1.6em;
+  background-color: #000;
+  color: #fff;
+  width: 120px;
+  height: 25px;
+  line-height: 1.6em;
+  text-align: center; }
+
+#addtocart-link3 a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: #fff; }
+
+#addtocart-link4 {
+  position: absolute !important;
+  top: 400px !important;
+  left: 800px !important;
+  font-family: EngraversGothic;
+  font-size: 1.6em;
+  background-color: #000;
+  color: #fff;
+  width: 120px;
+  height: 25px;
+  line-height: 1.6em;
+  text-align: center; }
+
+#addtocart-link4 a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: #fff; }
+
+/*/////////////////// products show styles end //////////////////////////*/
 .fancy_title {
   font-family: "EngraversGothic", arial, sans-serif;
   font-size: 2.1em;
