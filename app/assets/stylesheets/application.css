@@ -865,6 +865,105 @@ a.description {
   color: #fff; }
 
 /*/////////////////// products show styles end //////////////////////////*/
+/*/////////////////// cart index styles //////////////////////////*/
+table.cart {
+  position: absolute !important;
+  z-index: 2000 !important;
+  top: 150px !important;
+  left: 250px !important; }
+
+td.description a {
+  color: #000;
+  font-family: arial;
+  text-decoration: none;
+  text-align: center; }
+
+td.color a {
+  color: #000;
+  font-family: arial;
+  text-align: center; }
+
+td.size a {
+  color: #000;
+  font-family: arial;
+  text-align: center; }
+
+td.quantity a {
+  color: #000;
+  font-family: arial;
+  text-align: center; }
+
+td.price a {
+  color: #000;
+  font-family: arial;
+  text-align: center; }
+
+td.remove a {
+  color: #000;
+  font-family: arial;
+  text-align: center; }
+
+.cart-headings th {
+  padding-bottom: 40px;
+  padding-right: 40px; }
+
+.cart-links td {
+  padding-top: 20px;
+  width: 600px;
+  font-face: helveticaneue;
+  font-size: 1.2em; }
+
+tr.cart-links {
+  padding-top: 20px;
+  width: 600px; }
+
+tr.cart-links a {
+  padding-top: 30px;
+  color: #000 !important;
+  font-family: arial !important; }
+
+.total {
+  padding-top: 40px;
+  color: #000;
+  font-family: arial; }
+
+.price {
+  padding-top: 40px;
+  color: #000;
+  font-family: arial; }
+
+#cart-hr1 {
+  position: absolute;
+  left: 253px;
+  top: 130px;
+  color: #000;
+  background-color: #000;
+  width: 940px; }
+
+#cart-hr2 {
+  position: absolute;
+  left: 253px;
+  top: 180px;
+  color: #000;
+  background-color: #000;
+  width: 940px; }
+
+#cart-hr3 {
+  position: absolute;
+  left: 253px;
+  top: 370px;
+  color: #000;
+  background-color: #000;
+  width: 940px; }
+
+/*////////// cart index styles end ///////////////*/
+/*/////////////////// orders page //////////////////////////*/
+.order-form {
+  position: absolute !important;
+  top: 150px !important;
+  left: 500px !important; }
+
+/*/////////////////// orders page end //////////////////////////*/
 .fancy_title {
   font-family: "EngraversGothic", arial, sans-serif;
   font-size: 2.1em;
