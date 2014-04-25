@@ -1,0 +1,67 @@
+/* **************************************************************************
+2.1               Fruit machine 
+********************************************************************************/
+img.lever{
+  border: none;
+}
+
+img{
+  border: 3px solid #868788;
+}
+
+#pageWrapper
+{
+    z-index:1;
+  width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#hiddenHead{
+  position: absolute;
+  top: -500px;
+}
+
+#mastHead{
+  height: 200px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(../images/masthead.jpg);
+  background-position:  center top;
+  background-repeat: no-repeat;
+}
+#rollers{
+  
+  margin-left: -70px;
+  width: 900px;
+  height: 150px;
+  background-color: transparent;
+  
+}
+
+#rollerBack{
+  width: 900px;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image:url("../images/banditback.jpg");
+  background-position:  center top;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  
+}
+
+#rollers img{
+border-radius:30px;}
+
+#lever{
+  margin-top: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#sounds{
+  }
+
+/*/////////////////////// fruit machine end /////////////////////////////*/

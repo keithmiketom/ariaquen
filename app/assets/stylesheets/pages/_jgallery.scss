@@ -1,0 +1,154 @@
+/*////////////////// JQUERY GALLERY STYLES ////////////////////*/
+
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+
+ul {
+  list-style: none; }
+
+h2.gallery-title {
+  font-family: Arvo, Arial, sans-serif;
+  font-size: 30px;
+  line-height: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px; }
+
+p.gallery-subtitle {
+  font-family: Georgia, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 100;
+  color: white; }
+
+
+section#jquery-gallery {
+  max-width: 100%;
+  width: 800px;
+  min-height: 100%;
+  text-align: center;
+  padding: 30px 0;
+  margin:0 auto;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  background-color: #333333;
+  box-shadow: 0 0 10px;
+  /* @group Fullimage */
+  /* @end */
+  /* @group Smallimages */ }
+  section#jquery-gallery #fullPreview {
+    background-color: #333333;
+    border-top: 2px solid #333333;
+    border-bottom: 2px solid #333333;
+    padding: 50px 0 30px 0;
+    display: none; }
+    section#jquery-gallery #fullPreview img,
+    section#jquery-gallery #fullPreview .fullCaption {
+      max-width: 450px;
+      max-height: 450px;
+      margin: 0 auto;
+      display: block; }
+    section#jquery-gallery #fullPreview .fullCaption {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      line-height: 15px;
+      font-weight: 300;
+      color: white;
+      margin: 15px auto 0 auto; }
+    section#jquery-gallery #fullPreview figure {
+      background-image: url("../img/effects/close.png");
+      background-size: 100%;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      cursor: pointer; }
+  section#jquery-gallery li {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    /* @group Over */
+    /* @group Description */
+    /* @end *
+    /* @end */ }
+    section#jquery-gallery li:hover .overLayer {
+      -webkit-transition: opacity 0.3s linear;
+      -moz-transition: opacity 0.3s linear;
+      -ms-transition: opacity 0.3s linear;
+      -o-transition: opacity 0.3s linear;
+      transition: opacity 0.3s linear;
+      opacity: 0.6;
+      display: block;
+      background: gray; }
+    section#jquery-gallery li:hover .infoLayer {
+      -webkit-transition: opacity 0.3s linear;
+      -moz-transition: opacity 0.3s linear;
+      -ms-transition: opacity 0.3s linear;
+      -o-transition: opacity 0.3s linear;
+      transition: opacity 0.3s linear;
+      opacity: 1;
+      display: block; }
+    section#jquery-gallery li a {
+      display: block;
+      width: 149px;
+      height: 149px;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      z-index: 6; }
+      section#jquery-gallery li a.spinner {
+        background-size: 100%;
+        background-image: url("../img/effects/spinner.gif");
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 95px;
+        top: 60px; }
+    section#jquery-gallery li img {
+      border: none;
+      margin: 10px 10px 0 0; }
+    section#jquery-gallery li img.thumb{
+      border: none;
+      margin: 10px 10px 0 0; 
+      width:149px;
+      height:149px;}
+    section#jquery-gallery li .overLayer,
+    section#jquery-gallery li .infoLayer {
+      -webkit-transition: opacity 0.3s linear;
+      -moz-transition: opacity 0.3s linear;
+      -ms-transition: opacity 0.3s linear;
+      -o-transition: opacity 0.3s linear;
+      transition: opacity 0.3s linear;
+      width: 149px;
+      height: 149px;
+      position: absolute;
+      text-align: center;
+      opacity: 0;
+      top: 10px;
+      left: 0;
+      z-index: 4;
+      /* @end */ }
+      section#jquery-gallery li .overLayer ul,
+      section#jquery-gallery li .infoLayer ul {
+        padding: 50px 0 0 0; }
+        section#jquery-gallery li .overLayer ul li,
+        section#jquery-gallery li .infoLayer ul li {
+          display: block;
+          margin: 0 auto;
+          width: 149px;
+          padding: 0 0 5px 0; }
+          section#jquery-gallery li .overLayer ul li:first-child,
+          section#jquery-gallery li .infoLayer ul li:first-child {
+            border-bottom: 2px white solid; }
+          section#jquery-gallery li .overLayer ul li:last-child,
+          section#jquery-gallery li .infoLayer ul li:last-child {
+            padding: 5px 0 0 0;
+            text-transform: lowercase; }
+          section#jquery-gallery li .overLayer ul li h2,
+          section#jquery-gallery li .infoLayer ul li h2 {
+            font-size: 25px; }
+    section#jquery-gallery li .projectInfo {
+      display: none; }
+
+/*////////////////// JQUERY GALLERY STYLES END ///////////////////*/
