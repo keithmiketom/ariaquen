@@ -1,62 +1,66 @@
 <p id="notice"><%= notice %></p>
-<section>
-	<h3><%= @product.product_name %></h3>
-	<p class="product_detail"><%= @product.product_detail %></p>
+
+
+<div id = "image1">
+  <a class="fancybox" id="show-product" rel="nofollow" href="<%= image_path @product.image_url1 %>"><%= image_tag @product.image_url1 %></a>
+</div>
+
+<div id = "image2">
+  <a class="fancybox" id="show-product" rel="nofollow" href="<%= image_path @product.image_url2 %>"><%= image_tag @product.image_url2 %></a>
+</div>
+
+<div id = "image3">
+  <a class="fancybox" id="show-product" rel="nofollow" href="<%= image_path @product.image_url3 %>"><%= image_tag @product.image_url3 %></a>
+</div>
+
+
+<div id="product-text">
 	
 	
-	
-</section>
-<p>
-  <b>Product name:</b>
+<div class="show-product-name">
   <%= @product.product_name %>
-</p>
+</div>
 
-<p>
-  <b>Product detail:</b>
+<div class="show-product-id">
+	Ref: <%= @product.id %>
+</div>
+
+<div class="show-product-detail">
   <%= @product.product_detail %>
-</p>
+</div>
+
+<div class="show-product-price">
+  <%= @product.price %> EUR
+</div>
 
 <p>
-  <b>Price:</b>
-  <%= @product.price %>
-</p>
-
-<p>
-  <b>Product category:</b>
-  <%= @product.product_category %>
-</p>
-
-<p>
-  <b>In stock:</b>
-  <%= @product.in_stock %>
-</p>
-
-<p>
-  <b>Gender:</b>
+  <b>Brand:</b>
   <%= @product.gender %>
 </p>
 
-<p>
-  <b>Image url1:</b>
-  <%= @product.image_url1 %>
-</p>
+</div>
 
-<p>
-  <b>Image url2:</b>
-  <%= @product.image_url2 %>
-</p>
+ <% if current_user && current_user.admin = true %>
+<div id="addtocart-link1">
+    <%= link_to 'Edit', edit_product_path(@product) %>
+</div>
+<div id="addtocart-link2">
+    <%= link_to 'Destroy', @product, confirm: 'Are you sure?', method: :delete %>
+</div>
+    <% end %>
+    
+     <% if current_user && current_user.admin = true %>
+<div id="addtocart-link3">
+      <%= link_to 'New Product', new_product_path %>
+</div>
+    <% else %>
+<div id="addtocart-link4">
+	  <a href="/cart/<%= @product.id %>">ADD TO CART</a>
+	<% end %>
+</div>
 
-<p>
-  <b>Image url3:</b>
-  <%= @product.image_url3 %>
-</p>
 
-<p>
-  <b>Image url4:</b>
-  <%= @product.image_url4 %>
-</p>
-
-
-<%= link_to 'Edit', edit_product_path(@product) %> |
+<!-- <%= link_to 'Edit', edit_product_path(@product) %> | -->
 <%= link_to 'Back', products_path %>
-<a href="/cart/<%= @product.id %>">ADD TO CART</a>
+
+
