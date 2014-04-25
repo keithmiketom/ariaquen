@@ -1165,14 +1165,17 @@ h2.fancy_title {
       text-decoration: none; }
 
 /*/////////////////// sign in/register page styles end //////////////////////////*/
-h1 {
-  color: blue;
-  text-align: center;
-  font-size: 2.1em; }
-
-p.hello {
-  float: left;
-  width: 40%; }
+div#homepage {
+  height: 500px;
+  background-image: url("tshirts.jpg"), url("Custom-Printed-T-Shirts.gif"); }
+  div#homepage p {
+    color: white;
+    font-size: 6em;
+    font-family: 'ProximaNovaLtLight';
+    font-style: small-caps;
+    text-shadow: black -4px 4px 0;
+    text-align: center;
+    padding: 8px; }
 
 #affiliates-container {
   width: 80%;

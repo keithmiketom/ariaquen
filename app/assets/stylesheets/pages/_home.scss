@@ -1,5 +1,16 @@
-h1{color:blue;text-align:center;font-size:2.1em;}
+div#homepage {
+  height:500px;
+  background-image: url('tshirts.jpg'), 
+                    url('Custom-Printed-T-Shirts.gif') ;
+                    
+    p{
+      color:white;
+      font-size:6em;
+      font-family:'ProximaNovaLtLight';
+      font-style:small-caps;
+      text-shadow: black -4px 4px 0;
+      text-align:center;
+      padding:8px;
+    }
+}
 
-
-
-p.hello{float:left; width:40%;}
