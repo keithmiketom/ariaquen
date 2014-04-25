@@ -208,14 +208,7 @@ strong { font-weight: bold; }
   text-align:center;
 }
 
-#image1{
-  position:absolute;
-  left:382px;
-  z-index:1500;
-  top:195px;
-}
-
-a.fancybox img{height:180px; width:280px;}
+a.fancybox img{height:320px; width:240px;}
 
 a#show-product img{
   height:430px;
@@ -224,38 +217,22 @@ a#show-product img{
 
 a.description{padding-bottom:20px;}
 
-#image2{
-  position:absolute;
-  left:382px;
-  z-index:1500;
-  top:735px;
+
+#float-fancybox-images{
+  padding-left:200px;
+  width:240px;
+  height:1000px;
 }
 
-#image3{
-  position:absolute;
-  left:382px;
-  z-index:1500;
-  top:1280px;
-}
-
-#image4{
-  position:absolute;
-  left:382px;
-  z-index:1500;
-  top:1823px;
-}
-
-#image5{
-  position:absolute;
-  left:382px;
-  z-index:1500;
-  top:2365px;
+#float-fancybox-images img{
+float:left;
+padding-bottom:20px;
 }
 
 #product-text{
   position:absolute;
-  left:800px;
-  top:230px;
+  left:500px;
+  top:100px;
   width:230px;
 }
 
@@ -297,8 +274,8 @@ a.description{padding-bottom:20px;}
 
 #addtocart-link1{
   position:absolute !important;
-  top:400px !important;
-  left:800px !important;
+  top:220px !important;
+  left:500px !important;
     font-family:EngraversGothic;
     font-size: 1.6em;
     background-color:#000;
@@ -316,8 +293,8 @@ a.description{padding-bottom:20px;}
 
 #addtocart-link2{
   position:absolute !important;
-  top:430px !important;
-  left:800px !important;
+  top:250px !important;
+  left:500px !important;
     font-family:EngraversGothic;
     font-size: 1.6em;
     background-color:#000;
@@ -335,8 +312,8 @@ a.description{padding-bottom:20px;}
 
 #addtocart-link3{
   position:absolute !important;
-  top:460px !important;
-  left:800px !important;
+  top:280px !important;
+  left:500px !important;
     font-family:EngraversGothic;
     font-size: 1.6em;
     background-color:#000;
@@ -354,8 +331,8 @@ a.description{padding-bottom:20px;}
 
 #addtocart-link4{
   position:absolute !important;
-  top:400px !important;
-  left:800px !important;
+  top:220px !important;
+  left:500px !important;
     font-family:EngraversGothic;
     font-size: 1.6em;
     background-color:#000;
