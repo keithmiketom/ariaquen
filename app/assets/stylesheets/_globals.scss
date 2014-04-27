@@ -18,9 +18,9 @@ h1, h2, h3, h4, h5, h6 {font-family:sans-serif;}
 
 #loginbox{
   float:right;
-  width:30%;
+  width:15%;
   padding:2em;
-  background-color:complement($nav-hover); //need to choose colour palette for site 
+  
   div{
     float:right;
     font-family: 'ProximaNovaLtLight';
@@ -57,12 +57,16 @@ header{
   border-bottom:10px solid $sblack;
   }
 header div.logo {
+  background-image:url('ariaquen_logo.png');
+  background-size:85%;
+  background-repeat:no-repeat;
   color:white;
   font-size:4em;
   float:left;
-  padding-top:8px;
+  margin-top:-1%;
   padding-left:3%;
-  width:40%;
+  width:50%;
+  height:90%;
   h1{
     color:white;
     font-size:110%;
@@ -74,6 +78,16 @@ header div.logo {
   }
   
 }
+
+.banner1 {
+  background-image: url("ariabanner1.png");
+  background-repeat: no-repeat;
+  background-size:100%;
+  width:45%;
+  height:68%;
+  margin-left:25%;
+ }
+
 
 #main {
   border-top:15px solid $sblack;
