@@ -1,62 +1,202 @@
+ <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+             *  Simple image gallery. Uses default settings
+             */
+
+            $('.fancybox').fancybox();
+
+            /*
+             *  Different effects
+             */
+
+            // Change title type, overlay closing speed
+            $(".fancybox-effects-a").fancybox({
+                helpers: {
+                    title : {
+                        type : 'outside'
+                    },
+                    overlay : {
+                        speedOut : 0
+                    }
+                }
+            });
+
+            // Disable opening and closing animations, change title type
+            $(".fancybox-effects-b").fancybox({
+                openEffect  : 'none',
+                closeEffect    : 'none',
+
+                helpers : {
+                    title : {
+                        type : 'over'
+                    }
+                }
+            });
+
+            // Set custom style, close if clicked, change title type and overlay color
+            $(".fancybox-effects-c").fancybox({
+                wrapCSS    : 'fancybox-custom',
+                closeClick : true,
+
+                openEffect : 'none',
+
+                helpers : {
+                    title : {
+                        type : 'inside'
+                    },
+                    overlay : {
+                        css : {
+                            'background' : 'rgba(238,238,238,0.85)'
+                        }
+                    }
+                }
+            });
+
+            // Remove padding, set opening and closing animations, close if clicked and disable overlay
+            $(".fancybox-effects-d").fancybox({
+                padding: 0,
+
+                openEffect : 'elastic',
+                openSpeed  : 150,
+
+                closeEffect : 'elastic',
+                closeSpeed  : 150,
+
+                closeClick : true,
+
+                helpers : {
+                    overlay : null
+                }
+            });
+
+            /*
+             *  Button helper. Disable animations, hide close button, change title type and content
+             */
+
+            $('.fancybox-buttons').fancybox({
+                openEffect  : 'none',
+                closeEffect : 'none',
+
+                prevEffect : 'none',
+                nextEffect : 'none',
+
+                closeBtn  : false,
+
+                helpers : {
+                    title : {
+                        type : 'inside'
+                    },
+                    buttons    : {}
+                },
+
+                afterLoad : function() {
+                    this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+                }
+            });
+
+
+            /*
+             *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+             */
+
+            $('.fancybox-thumbs').fancybox({
+                prevEffect : 'none',
+                nextEffect : 'none',
+
+                closeBtn  : false,
+                arrows    : false,
+                nextClick : true,
+
+                helpers : {
+                    thumbs : {
+                        width  : 50,
+                        height : 50
+                    }
+                }
+            });
+
+            /*
+             *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+            */
+            $('.fancybox-media')
+                .attr('rel', 'media-gallery')
+                .fancybox({
+                    openEffect : 'none',
+                    closeEffect : 'none',
+                    prevEffect : 'none',
+                    nextEffect : 'none',
+
+                    arrows : false,
+                    helpers : {
+                        media : {},
+                        buttons : {}
+                    }
+                });
+
+        });
+    </script>
+
+
+
 <p id="notice"><%= notice %></p>
-<section>
-	<h3><%= @product.product_name %></h3>
-	<p class="product_detail"><%= @product.product_detail %></p>
-	
-	
-	
-</section>
-<p>
-  <b>Product name:</b>
-  <%= @product.product_name %>
-</p>
 
-<p>
-  <b>Product detail:</b>
-  <%= @product.product_detail %>
-</p>
+<div id="float-fancybox-images">
 
-<p>
-  <b>Price:</b>
-  <%= @product.price %>
-</p>
-
-<p>
-  <b>Product category:</b>
-  <%= @product.product_category %>
-</p>
-
-<p>
-  <b>In stock:</b>
-  <%= @product.in_stock %>
-</p>
-
-<p>
-  <b>Gender:</b>
-  <%= @product.gender %>
-</p>
-
-<p>
-  <b>Image url1:</b>
-  <%= @product.image_url1 %>
-</p>
-
-<p>
-  <b>Image url2:</b>
-  <%= @product.image_url2 %>
-</p>
-
-<p>
-  <b>Image url3:</b>
-  <%= @product.image_url3 %>
-</p>
-
-<p>
-  <b>Image url4:</b>
-  <%= @product.image_url4 %>
-</p>
+  <a class="fancybox" href="<%= image_path @product.image_url1 %>"><%= image_tag @product.image_url1 %></a>
 
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
-<a href="/cart/<%= @product.id %>">ADD TO CART</a>
+
+  <a class="fancybox" href="<%= image_path @product.image_url2 %>"><%= image_tag @product.image_url2 %></a>
+
+
+  <a class="fancybox" href="<%= image_path @product.image_url3 %>"><%= image_tag @product.image_url3 %></a>
+
+</div>
+
+<div id="product-text">
+    
+    
+<div class="show-product-name">
+  <%= @product.product_name.upcase %>
+</div>
+
+<div class="show-product-id">
+    Ref: <%= @product.id %>
+</div>
+
+<div class="show-product-detail">
+  <%= @product.product_detail.upcase %>
+</div>
+
+<div class="show-product-price">
+  <%= @product.price %> EUR
+</div>
+
+</div>
+
+
+ <% if current_user && current_user.admin = true %>
+<div id="addtocart-link1">
+    <%= link_to 'Edit', edit_product_path(@product) %>
+</div>
+<div id="addtocart-link2">
+    <%= link_to 'Destroy', @product, confirm: 'Are you sure?', method: :delete %>
+</div>
+    <% end %>
+    
+     <% if current_user && current_user.admin = true %>
+<div id="addtocart-link3">
+      <%= link_to 'New Product', new_product_path %>
+</div>
+    <% else %>
+<div id="addtocart-link4">
+	  <a href="/cart/<%= @product.id %>">ADD TO CART</a>
+	<% end %>
+</div>
+
+
+<!-- <%= link_to 'Edit', edit_product_path(@product) %> 
+<%= link_to 'Back', products_path %>| -->
+
+
