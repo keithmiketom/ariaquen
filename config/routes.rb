@@ -73,9 +73,10 @@ Ariaquen::Application.routes.draw do
   match '/search' => 'products#index'
   match '/product_category/:id' => 'products#product_category'
   match '/about' => 'site#about'
+  match '/home' => 'site#home'
 
 
-  root :to => "home#index"
+  root :to => "public#index"
 
 
 
