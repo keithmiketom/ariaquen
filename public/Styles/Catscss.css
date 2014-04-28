@@ -168,7 +168,7 @@ body{
                    
                /*Parallax page*/
                .head1
-               {    width:700px;
+               {    width:1000px;
                    vertical-align:middle;
                    height:3em; 
                    line-height:3em;
@@ -212,6 +212,18 @@ body{
                    }
                 .head1 .char14
                {font-size:4.6em;
+                   }
+                    .head1 .char15
+               {font-size:4.8em;
+                   }
+                    .head1 .char16
+               {font-size:5.0em;
+                   }
+                    .head1 .char17
+               {font-size:5.2em;
+                   }
+                    .head1 .char18
+               {font-size:5.4em;
                    }
 /*******************************************************************************
 2.					Home Splash page
