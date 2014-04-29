@@ -338,6 +338,8 @@ body#index {
   height: 900px;
   margin: 0 auto;
   padding: 40px 0 0 0; }
+  #index #fifth h1 {
+    margin-left: 30%; }
 
 #index #sixth .story {
   margin: 0 auto;
@@ -365,7 +367,7 @@ body#index {
   color: white;
   font-family: sans-serif;
   font-size: 1.5em;
-  margin: auto 0;
+  margin-left: 40%;
   text-decoration: none;
   padding: 15px; }
 
