@@ -1,14 +1,17 @@
-{ "type": "FeatureCollection",
-    "features": [
-      { "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [102.0, 0.5]},
-        "properties": {"prop0": "value0"}
-        },
-		{ "type": "Feature",
-        "geometry": {"type": "Point", "coordinates": [-98.20747,19.04603]},
-        "properties": {"prop0": "value0"}
-        }
-		
-		
-       ]
-     }  
+{"markers":[ { "latitude":40.64897, "longitude":-73.70277,"title":"NY", "content":"<b>Long Island,</b>  <br> New York <br>  <img src='images/storelocator/tshirt-icon.png' />" }, 
+			{ "latitude":53.35326, "longitude":-6.26736, "title":"Dublin", "content":"<b>Dublin,</b> <br> Ireland <br> <img src='images/storelocator/tshirt-icon.png' />" },
+			{ "latitude":54.00196, "longitude":-6.39988, "title":"Dundalk", "content":"<b>Dundalk,</b> <br> Ireland <br> <img src='images/storelocator/tshirt-icon.png' />" },
+			{ "latitude":51.89890, "longitude":-8.49518, "title":"Cork", "content":"<b>Cork,</b> <br> Ireland <br> <img src='images/storelocator/tshirt-icon.png' />" },
+			{ "latitude":19.01413, "longitude":-98.19069, "title":"Puebla", "content":"<b>Puebla,</b> <br> Mexico <br> <img src='images/storelocator/tshirt-icon.png' />" },
+			{ "latitude":37.77897, "longitude":-122.42683, "title":"Dublin", "content":"<b>Dublin,</b> <br> Ireland <br> <img src='images/storelocator/tshirt-icon.png' />" },
+			{ "latitude":53.35326, "longitude":-6.26736, "title":"Dublin", "content":"<b>Dublin,</b> <br> Ireland <br> <img src='images/storelocator/tshirt-icon.png' />" },
+			{ "latitude":53.35326, "longitude":-6.26736, "title":"Dublin", "content":"<b>Dublin,</b> <br> Ireland <br> <img src='images/storelocator/tshirt-icon.png' />" },
+			{ "latitude":53.35326, "longitude":-6.26736, "title":"Dublin", "content":"<b>Dublin,</b> <br> Ireland <br> <img src='images/storelocator/tshirt-icon.png' />" },
+			{ "latitude":53.35326, "longitude":-6.26736, "title":"Dublin", "content":"<b>Dublin,</b> <br> Ireland <br> <img src='images/storelocator/tshirt-icon.png' />" },
+			{ "latitude":53.35326, "longitude":-6.26736, "title":"Dublin", "content":"<b>Dublin,</b> <br> Ireland <br> <img src='images/storelocator/tshirt-icon.png' />" },
+			{ "latitude":53.35326, "longitude":-6.26736, "title":"Dublin", "content":"<b>Dublin,</b> <br> Ireland <br> <img src='images/storelocator/tshirt-icon.png' />" },
+			{ "latitude":53.35326, "longitude":-6.26736, "title":"Dublin", "content":"<b>Dublin,</b> <br> Ireland <br> <img src='images/storelocator/tshirt-icon.png' />" },
+			{ "latitude":53.35326, "longitude":-6.26736, "title":"Dublin", "content":"<b>Dublin,</b> <br> Ireland <br> <img src='images/storelocator/tshirt-icon.png' />" }			
+			
+			
+			 ]}
