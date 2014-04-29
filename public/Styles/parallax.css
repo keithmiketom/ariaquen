@@ -690,7 +690,9 @@ div#gallery {
   text-align: left;
   margin-right: 50%;
   list-style: none;
-  font-size: 1.6em; }
+  font-size: 1.3em; }
+  .defs ul {
+    font-size: 0.8em; }
 
 .content h3, .content p {
   clear: both; }
