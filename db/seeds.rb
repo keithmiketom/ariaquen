@@ -24,13 +24,13 @@ Product.create( :product_name => 'V-Neck Tshirt', :product_detail => '100% cotto
 
 Product.create( :product_name => 'Ottoman Sweater', :product_detail => 'Ottoman sweater by American Apparel', :price => '21.95', :product_category => 'Sweaters', :in_stock => 'True', :gender => 'Mens', :image_url1 => 'aa_mens_ottoman_sweater1.jpeg', :image_url2 => 'aa_mens_ottoman_sweater2.jpeg', :image_url3 => 'aa_mens_ottoman_sweater3.jpeg')
 
-Product.create( :product_name => 'Crew-Neck Sweater', :product_detail => '100% cotton crew-neck sweater by American Apparel', :price => '20.95', :product_category => 'Sweaters', :in_stock => 'True', :gender => 'Mens', :image_url1 => 'aa_mens_basic_crew_neck_sweater1.jpeg', :image_url2 => 'aa_mens_basic_crew_neck_sweater2.jpeg', :image_url3 => 'aa_mens_basic_crew_neck_sweater3.jpeg')
+Product.create( :product_name => 'Crew-Neck Sweater', :product_detail => '100% cotton crew-neck sweater by American Apparel', :price => '20.95', :product_category => 'Sweaters', :in_stock => 'True', :gender => 'Mens', :image_url1 => 'aa_mens_basic_crew_neck_sweater1.jpg', :image_url2 => 'aa_mens_basic_crew_neck_sweater2.jpg', :image_url3 => 'aa_mens_basic_crew_neck_sweater3.jpg')
 
 Product.create( :product_name => 'Cap Sleeve Tshirt', :product_detail => 'Kids baby rib cap-sleeve tshirt by American Apparel', :price => '8.95', :product_category => 'Tops', :in_stock => 'True', :gender => 'Kids', :image_url1 => 'kids_baby_rib_cap_sleeve_tee1.jpeg', :image_url2 => 'kids_baby_rib_cap_sleeve_tee2.jpeg', :image_url3 => 'kids_baby_rib_cap_sleeve_tee3.jpeg')
 
 Product.create( :product_name => 'Neon Tshirt', :product_detail => 'Kids neon poly-cotton tshirt by American Apparel', :price => '8.99', :product_category => 'Tops', :in_stock => 'True', :gender => 'Kids', :image_url1 => 'kids_neon_poly_cotton_tee1.jpeg', :image_url2 => 'kids_neon_poly_cotton_tee2.jpeg', :image_url3 => 'kids_neon_poly_cotton_tee3.jpeg')
 
-Product.create( :product_name => 'Babygro', :product_detail => '100% cotton babygro by American Apparel', :price => '7.49', :product_category => 'Tops', :in_stock => 'True', :gender => 'Kids', :image_url1 => 'aa_babygro_1.jpeg', :image_url2 => 'aa_babygro_2.jpeg', :image_url3 => 'aa_babygro_3.jpeg')
+Product.create( :product_name => 'Babygro', :product_detail => '100% cotton babygro by American Apparel', :price => '7.49', :product_category => 'Tops', :in_stock => 'True', :gender => 'Kids', :image_url1 => 'aa_babygro1.jpeg', :image_url2 => 'aa_babygro2.jpeg', :image_url3 => 'aa_babygro3.jpeg')
 
 Product.create( :product_name => 'Kids Racerback Dress', :product_detail => 'Kids ribbed racerback dress by American Apparel', :price => '10.95', :product_category => 'Dresses', :in_stock => 'True', :gender => 'Kids', :image_url1 => 'kids_dress1.jpeg', :image_url2 => 'kids_dress2.jpeg', :image_url3 => 'kids_dress3.jpeg')
 

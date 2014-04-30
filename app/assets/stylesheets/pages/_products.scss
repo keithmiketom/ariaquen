@@ -165,7 +165,7 @@ padding-bottom:20px;
 /*/////////////////// products show styles end //////////////////////////*/
 
 
-/*Search styles*/
+/*////////////////// products Search styles ////////////////////////////*/
 
 div.float-products{
   width:30%;
@@ -178,3 +178,68 @@ div.float-products{
     @include subtle-border;
     }
 }
+
+ /* products gallery */
+.pagination{
+  position:absolute;
+  width:200px;
+  top:80px;
+  left:400px; 
+}
+
+#catalog{
+  position:absolute;
+  width:400px;
+  top:150px;
+  left:400px;
+}
+
+#catalog a img{
+  position:relative;
+  height:300px;
+  margin-bottom:20px;
+}
+
+#catalog a:link{
+  color:#000;
+  text-decoration:none;
+  font-family:Arial, "Helvetica Neue";
+  text-align:center;
+}
+
+#catalog a:visited{
+  color:#000;
+  text-decoration:none;
+}
+
+#catalog a:hover{
+  color:#000;
+  text-decoration:underline;
+}
+
+#catalog a:active{
+  color:#000;
+  text-decoration:none;
+}
+
+#catalog th .current{
+  padding-right:12px;
+  background-repeat:no-repeat;
+  background-position:right center;
+}
+
+#catalog th .asc{
+  background-image:url(up_arrow.gif);
+}
+
+#catalog th .asc{
+  background-image:url(down_arrow.gif);
+}
+
+#sorters a{
+  font-family:arial !important; 
+  font-size:1.2em !important;
+  
+}
+
+/*////////////////// products Search styles end ////////////////////////////*/

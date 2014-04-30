@@ -1,14 +1,18 @@
 class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
-  def index
-    @products = Product.all
 
+  helper_method :sort_column, :sort_direction
+  
+  def index
+    @products = Product.search(params[:search]).order(sort_column + " " + sort_direction).paginate(:per_page => 2, :page => params[:page])
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @products }
+      format.js # index.js.erb 
     end
   end
+  
 
   # GET /products/1
   # GET /products/1.json
@@ -20,6 +24,43 @@ class ProductsController < ApplicationController
       format.json { render json: @product }
     end
   end
+  
+  def ensure_admin
+    unless current_user && current_user.admin?
+     render:text => "Access Error Message", :status => :unauthorized
+    end
+  end 
+
+  def product_type
+    @products = Product.find_all_by_product_type(params[:id])
+    @product_type = params[:id]
+    
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @products }
+    end
+  end
+  
+
+  def product_category
+    @products = Product.find_all_by_product_category(params[:id])
+    @product_category = params[:id]
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @products }
+    end
+  end
+
+
+  def search
+    @search_term = params[:q]
+      st = "%#{params[:q]}%"
+    @products = Product.where("name like ? or description like ?", st, st)
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @items }
+  end
+end
 
   # GET /products/new
   # GET /products/new.json
@@ -81,6 +122,18 @@ class ProductsController < ApplicationController
     end
   end
   
+  def sort_column
+    params[:sort] || "product_name"
+  end
+  
+  def sort_direction
+    params[:direction] || "asc"
+  end
+
+
+
+
+  
   def product_category
     @products = Product.find_all_by_product_category(params[:id])
     @product_category = params[:id]
@@ -101,14 +154,6 @@ class ProductsController < ApplicationController
   end
 
 
-  def search
-    @search_term = params[:q]
-      st = "%#{params[:q]}%"
-    @products = Product.where("name like ? or description like ?", st, st)
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @items }
-  end
-end
+
 
 end

@@ -1,0 +1,41 @@
+<%= hidden_field_tag :direction, params[:direction] %>
+<%= hidden_field_tag :sort, params[:sort] %>
+<table id="catalog">
+	<tr id="sorters">
+    <th><%= sortable "product_name" %></th>
+    <th><%= sortable "brand" %></th>
+    <th><%= sortable "created_at" %></th>
+    </tr> 
+   
+<% @products.each do |product| %>
+
+    <tr>
+        <td>
+            <div class="image">
+                <%= link_to (image_tag product.image_url1), product %>
+            </div>
+        </td>
+
+        <td>
+            <div class="title">
+                <%= link_to product.product_name.upcase, product %>
+            </div>
+            </br>
+                <%= number_to_currency(product.price, :unit => "&euro;") %>
+            </div>
+            </br>
+            <div class="links">
+                <% if current_user && current_user.admin = true %>
+                  <td><%= link_to 'Show', product %></td>
+                  <td><%= link_to 'Edit', edit_product_path(product) %></td>
+                  <td><%= link_to 'Destroy', product, confirm: 'Are you sure?', method: :delete %></td>
+                <% end %>
+                <% if current_user && current_user.admin = true %>
+                  <td><%= link_to 'New Product', new_product_path %></td>
+                <% end %>
+            </div>
+        </td>
+    </tr>
+<% end %>
+</table>
+<%= will_paginate @products %>   
