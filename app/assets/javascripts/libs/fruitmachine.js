@@ -59,12 +59,12 @@ function endgame() {
     pic3 = document.getElementById("roller3").getAttribute("src");
     if (pic1 == pic2 && pic2 == pic3) {
         playSound("win.wav");
-        alertify.confirm("AMEWSING!");
+        alertify.confirm("Discount Code: 9876yhvrh!!");
     } else {
 
         var rndEnd = Math.floor(Math.random() * 3) + 1;
         playSound("loose" + rndEnd + ".wav");
-        alertify.alert("No matches, Boo for you!");
+        alertify.alert("No matches! Boo, you whore!");
     }
 }
 
