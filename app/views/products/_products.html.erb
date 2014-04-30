@@ -1,9 +1,12 @@
+	<h2>Product Catalogue</h2>
+
 <%= hidden_field_tag :direction, params[:direction] %>
 <%= hidden_field_tag :sort, params[:sort] %>
 <div class="pagin">
 	<%= will_paginate @products %> 
 </div>  
 <table id="catalog">
+
 	<tr id="sorters">
     <th><%= sortable "product_name" %></th>
     <th><%= sortable "gender" %></th>
@@ -21,10 +24,8 @@
 
         <td>
             <div class="title">
-                <%= link_to product.product_name, product %>
-            </div>
-            </br>
-                <%= number_to_currency(product.price, :unit => "&euro;") %>
+                <h3 ><%= link_to product.product_name, product %></h3>
+                <p><%= number_to_currency(product.price, :unit => "&euro;") %></p>
             </div>
             </br>
             <div class="links">
@@ -41,3 +42,4 @@
     </tr>
 <% end %>
 </table>
+

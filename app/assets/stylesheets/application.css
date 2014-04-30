@@ -815,6 +815,9 @@ h2.fancy_title {
   background-color: rgba(191, 64, 149, 0.5);
   border-radius: 60px; }
 
+h3.fancy_title {
+  text-shadow: #cc00cc -2px 2px 0; }
+
 h2.fancy_title .char1, h2.fancy_title .char5, h2.fancy_title .char9 {
   color: #9947eb; }
 
@@ -838,6 +841,16 @@ h2.fancy_title .char3, h2.fancy_title .char7, h2.fancy_title .char11 {
 h2.fancy_title .char3:hover, h2.fancy_title .char7:hover, h2.fancy_title .char11:hover {
   color: #ffb366;
   -webkit-transform: rotate(15deg) !important; }
+
+th h4.table_title {
+  font-family: sans-serif;
+  font-weight: bold; }
+  th h4.table_title a {
+    color: black;
+    text-decoration: none; }
+    th h4.table_title a:hover {
+      color: magenta;
+      text-decoration: none; }
 
 /*/////////////////// sign in/register page styles //////////////////////////*/
 .site-forms {
@@ -2726,29 +2739,34 @@ div.float-products {
 
 /* products gallery */
 #catalog {
-  position: absolute;
-  width: 400px;
-  top: 150px;
-  left: 400px; }
+  width: 100%;
+  margin-top: 50px;
+  overflow: auto; }
 
 #catalog a img {
-  position: relative;
   height: 300px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px; }
+  #catalog a img:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=40); }
 
 #catalog a:link {
   color: #000;
   text-decoration: none;
-  font-family: Arial, "Helvetica Neue";
-  text-align: center; }
+  font-family: 'BebasNeueRegular', 'ProximaNovaLtLight', Arial, sans-serif;
+  text-align: center;
+  font-size: 3em; }
 
 #catalog a:visited {
   color: #000;
   text-decoration: none; }
 
 #catalog a:hover {
-  color: #000;
-  text-decoration: underline; }
+  text-decoration: none;
+  color: magenta;
+  text-shadow: black -2px 2px 0; }
 
 #catalog a:active {
   color: #000;
@@ -2766,7 +2784,14 @@ div.float-products {
   background-image: url(down_arrow.gif); }
 
 #sorters a {
-  font-family: arial !important;
-  font-size: 1.2em !important; }
+  font-family: 'BebasNeueRegular', 'ProximaNovaLtLight', Arial, sans-serif;
+  font-size: 3.5em;
+  background-color: #e9e9e9;
+  border-radius: 5px;
+  padding: 3px 8px; }
+  #sorters a:hover {
+    text-decoration: none;
+    color: magenta;
+    text-shadow: black -2px 2px 0; }
 
 /*////////////////// products Search styles end ////////////////////////////*/

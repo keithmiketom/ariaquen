@@ -50,6 +50,9 @@
                     background-color:hsla(320, 50%, 50%, 0.5);
                     border-radius:60px;
                    }
+    h3.fancy_title{
+       text-shadow: darken(magenta, 10%) -2px 2px 0;
+    }
                
                 h2.fancy_title .char1, h2.fancy_title .char5, h2.fancy_title .char9
                 {color:hsla(270, 80%, 60%, 1.0);
@@ -77,3 +80,19 @@
                     color:hsla(30, 100%, 70%, 1.0);
                     -webkit-transform: rotate(15deg) !important;
                    }
+
+th h4.table_title{
+  font-family:sans-serif;
+  font-weight:bold;
+
+      a{
+        color:black;
+        text-decoration:none;
+        &:hover{
+          color:magenta;
+          text-decoration:none;
+        }
+      }
+
+  
+}
