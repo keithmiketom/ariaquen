@@ -163,3 +163,18 @@ padding-bottom:20px;
 }
 
 /*/////////////////// products show styles end //////////////////////////*/
+
+
+/*Search styles*/
+
+div.float-products{
+  width:30%;
+  margin-top:55px; 
+  padding:0;
+  margin-right:5%;
+  float:left;
+  img{
+    @include border-mix-radius(40px);
+    @include subtle-border;
+    }
+}

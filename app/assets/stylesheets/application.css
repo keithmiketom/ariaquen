@@ -2672,3 +2672,15 @@ a.description {
   color: #fff; }
 
 /*/////////////////// products show styles end //////////////////////////*/
+/*Search styles*/
+div.float-products {
+  width: 30%;
+  margin-top: 55px;
+  padding: 0;
+  margin-right: 5%;
+  float: left; }
+  div.float-products img {
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-right: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8; }
