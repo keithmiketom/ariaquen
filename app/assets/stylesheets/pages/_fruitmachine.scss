@@ -1,59 +1,53 @@
-/* **************************************************************************
-2.1               Fruit machine 
-********************************************************************************/
 img.lever{
   border: none;
 }
 
-img.fruitmachine-img{
-  border: 3px solid #868788;
-}
 
 #pageWrapper
 {
-    z-index:1;
-  width: 700px;
-  margin-right: auto;
-  margin-left: auto;
+  z-index:1;
+  width: 80%; 
+  border-radius:30px;
+  background-color:hsla(290, 90%, 50%, 0.5);
+  margin:0 auto ;
+  padding:4em;
 }
-
 #hiddenHead{
-  position: absolute;
-  top: -500px;
+  position:absolute;
+  top:50px;
+  left:35%;
+  background-color:hsla(170, 60%, 50%, 0.8);
+  text-align:center;
+  h1{
+  text-shadow: darken(hsla(170, 60%, 50%, 0.8), 20%) -2px 2px 0;
+  }
+  h3{
+    font-size:3em;
+    text-shadow: darken(hsla(170, 60%, 50%, 0.8), 20%) -1px 2px 0;
+  }
 }
 
 #mastHead{
   height: 200px;
-  margin-top: 50px;
-  margin-right: auto;
-  margin-left: auto;
-  background-image: url('masthead.jpg');
-  background-position:  center top;
-  background-repeat: no-repeat;
+  margin: 0 auto;
+
 }
-#rollers{
-  
-  margin-left: -70px;
-  width: 900px;
-  height: 150px;
-  background-color: transparent;
-  
+
+#holster{
+  clear:both;
+  background-color:white;
+  border-radius:30px;
+  padding-top:35px;
 }
 
 #rollerBack{
-  width: 900px;
-  height: 150px;
-  margin-right: auto;
-  margin-left: auto;
-  background-image:url("banditback.jpg");
-  background-position:  center top;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  
+  width:65%;
+  margin:0 auto;
 }
 
 #rollers img{
-border-radius:30px;}
+border-radius:40px;
+border:5px solid magenta;}
 
 #lever{
   margin-top: 100px;
@@ -61,7 +55,6 @@ border-radius:30px;}
   cursor: pointer;
 }
 
-#sounds{
-  }
 
-/*/////////////////////// fruit machine end /////////////////////////////*/
+
+/*fruit machine end */

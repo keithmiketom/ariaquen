@@ -12,6 +12,7 @@ Ariaquen::Application.routes.draw do
   get "site/affiliates"
   get "site/testimonials"
   get "site/discounts"
+  get 'site/caelidoscope'
 
 
   resources :site
