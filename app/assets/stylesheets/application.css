@@ -1417,7 +1417,7 @@ div.pagin {
         background: #fefefe;
         background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fefefe), to(#f0f0f0));
         background: -moz-linear-gradient(0% 0% 270deg, #fefefe, #f0f0f0); }
-    div.pagin .pagination a:active {
+    div.pagin .pagination a:active, div.pagin .pagination em.current {
       border: none;
       background: #616161;
       box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.8);
