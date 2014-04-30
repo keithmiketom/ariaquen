@@ -1,2 +1,51 @@
-<h1>Site#contact</h1>
-<p>Find me in app/views/site/contact.html.erb</p>
+<h1 class="fancy_title">Contact Us</h1>
+
+
+<script>
+var emailField = document.getElementById();
+
+emailField.onfocus = function () {
+	if ( emailField.value =="Insert Contact email") {
+		emailField.value = ""	
+	}
+};
+
+emailField.onblur = function () {
+	if ( emailField.value =="") {
+		emailField.value = "Insert Contact email"	
+	}
+};
+</script>
+
+        			<form id="condetail" action="mailto:mail@ariaquen.com" method="post" enctype="text/plain" onsubmit="return validateForm(this);">
+						<fieldset id="yourdetails"><br />
+    						<legend class="fancy_title"><em>Get in touch</em>
+                            </legend>
+                            <div class="control-group">
+  							<label class="control-label">Your Name</label> <br /><br />
+                            	<input name="name" type="text" size="30px" maxlength="40"  />
+                            	</div>
+                            <br /><br /><br />
+                            
+                           
+                            <br /><p>Service Enquired about</p>
+                            <select name="servicereq">
+                            	<option>-</option>
+                                <option> Twerking </option>
+                                <option> Wreckin' balls</option>
+                                <option> Dating</option>
+                                
+                            </select>
+                               <br />   <br />		
+    						<label>Email </label><br /><br />
+                            	<input type="text" name="email" id="email"  maxlength="40" size="30px" />
+    						<br /><br /><br />
+    						<label>Insert Request in here</label><br /><br /><br />
+								<textarea name="message" id="comment" cols="38" rows="7"  >Ask me Anything!
+                                </textarea>
+							<br /><br />
+							<!--submit button-->
+                            	<input name="submit" type="submit" class="submit" value="To Us!"  target="_blank" />
+						</fieldset>
+					</form>
+    		</div><!--end of right section--> 

@@ -4,9 +4,11 @@
 .alertify,
 .alertify-log {
 	font-family: sans-serif;
+	font-size:2em;
+	color:white;
 }
 .alertify {
-	background-image:url(../images/lvucits.png);
+	background-image:url(../images/footprints.png);
 	background-size:50%;
 	border: 10px solid #333; /* browsers that don't support rgba */
 	border: 10px solid rgba(0,0,0,.7);
