@@ -3,4 +3,5 @@ class Ariaquenupload < ActiveRecord::Base
   
     mount_uploader :uploadedimage, AriaquenUploader
     
+    belongs_to :products
 end

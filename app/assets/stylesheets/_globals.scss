@@ -108,14 +108,21 @@ header div.logo {
 #footer {
   position: relative;
   margin: 0 auto;
-  margin-top: -150px; /* negative value of footer height */
-  height: 150px;
+  margin-top: -160px; /* negative value of footer height */
+  height: 160px;
   clear:both;
   width:100%;
-
   background-color:$sblack;
-    p{
+
+    div{
       color:white;
+      padding:10px;
+      margin:0 auto;
+      h4{
+        font-size:3em;
+        text-shadow: orchid -2px 2px 0;
+        
+      }
       }
  
    .f1 {float:left; width:22%;}

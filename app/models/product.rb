@@ -1,6 +1,10 @@
 class Product < ActiveRecord::Base
   attr_accessible :gender, :image_url1, :image_url2, :image_url3, :image_url4, :in_stock, :price, :product_category, :product_detail, :product_name
-
+  # Associations
+  has_many :uploadedimage, :through => :ariaquenuploads
+  
+  mount_uploader :uploadedimage, AriaquenUploader
+  
 def self.search(search)
   if search
     where('product_name LIKE ?', "%#{search}%")
