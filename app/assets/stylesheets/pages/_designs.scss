@@ -1,3 +1,56 @@
 // Place all the styles related to the designs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*/////////////////// lookbook //////////////////////////*/
+
+.lookbook{
+  position:absolute;
+  top:200px;
+  left:90px;
+  width:1110px;
+  color:#000;
+}
+
+div.float {
+  width:250px;
+  height:168px;
+  float: left;
+  margin:6px;
+  }
+  
+div.float p {
+   text-align: center;
+   }
+ 
+.lookbook-show-image{width:250px; height:250px;}
+
+.new-lookbook{
+  position:absolute !important;
+  top:-25px !important;
+  right:68px !important;
+    font-family:EngraversGothic;
+    font-size: 1.6em;
+    background-color:#000;
+  color:#fff;
+  width:120px;
+  height:25px;
+  line-height:1.6em;
+  text-align: center;
+}
+
+.edit-lookbook{
+  position:absolute !important;
+  top:400px !important;
+  left:800px !important;
+    font-family:EngraversGothic;
+    font-size: 1.6em;
+    background-color:#000;
+  color:#fff;
+  width:120px;
+  height:25px;
+  line-height:1.6em;
+  text-align: center;
+}
+   
+/*/////////////////// lookbook end //////////////////////////*/
