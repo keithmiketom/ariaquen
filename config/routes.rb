@@ -2,6 +2,8 @@ Ariaquen::Application.routes.draw do
   resources :ariaquenuploads
   
   get "ariaquenuploads/_new"
+  
+  
 
 
   resources :designs
