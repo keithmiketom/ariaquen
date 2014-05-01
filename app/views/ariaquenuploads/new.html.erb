@@ -1,5 +1,40 @@
-<h1>New ariaquenupload</h1>
+<div class="site-forms">
+<h1>New AriaQuen Upload</h1>
 
-<%= render 'form' %>
+<%= form_for @ariaquenupload, html: { multipart: true } do |f| %>
+  <% if @ariaquenupload.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ariaquenupload.errors.count, "error") %> prohibited this from being saved:</h2>
+
+      <ul>
+      <% @ariaquenupload.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :item1 %><br />
+    <%= f.text_field :item1 %>
+  </div>
+  <div class="field">
+    <%= f.label :item2 %><br />
+    <%= f.text_field :item2 %>
+  </div>
+  <div class="field">
+    <%= f.label :item3 %><br />
+    <%= f.text_field :item3 %>
+  </div>
+  <div class="field">
+    <%= f.label :uploadedimage %><br />
+    <%= f.file_field :uploadedimage %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
 
 <%= link_to 'Back', ariaquenuploads_path %>
+
+</div>

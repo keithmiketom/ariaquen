@@ -1,25 +1,40 @@
+<div class="site-forms">
+
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Item1:</b>
-  <%= @ariaquenupload.item1 %>
-</p>
+  <div class="lookbook-show-image">
+  	<ul>
+  	  <li><a class="fancybox" href="<%= image_path @ariaquenupload.uploadedimage %>"><%= image_tag @ariaquenupload.uploadedimage(:medium) %></a></li>
+  	</ul>
+  </div>
+  <br />
+  <div class="name">
+  	<ul>
+  	  <li><%= @ariaquenupload.item1 %></li>
+  	</ul>
+  </div>
+  <br />
+  <div class="name">
+  	<ul>
+  	  <li><%= @ariaquenupload.item2 %></li>
+    <ul>
+  </div>
+  <br />  
+  <div class="name">
+  	<ul>
+  	  <li><%= @ariaquenupload.item3 %></li>
+    <ul>
+  </div>
+  <br />
+  <% if current_user && current_user.admin = true %>
+  <div class="name">
+  	<ul>
+  	  <li><%= link_to 'Edit', edit_ariaquenupload_path(@ariaquenupload) %> | <% end %><%= link_to 'Back', ariaquenuploads_path %></li>
+    <ul>
+  </div>
+  
 
-<p>
-  <b>Item2:</b>
-  <%= @ariaquenupload.item2 %>
-</p>
-
-<p>
-  <b>Item3:</b>
-  <%= @ariaquenupload.item3 %>
-</p>
-
-<p>
-  <b>Uploadedimage:</b>
-  <%= @ariaquenupload.uploadedimage %>
-</p>
 
 
-<%= link_to 'Edit', edit_ariaquenupload_path(@ariaquenupload) %> |
-<%= link_to 'Back', ariaquenuploads_path %>
+
+</div>
