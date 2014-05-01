@@ -2,10 +2,9 @@
 .fancy_title{
   font-family:"EngraversGothic", arial, sans-serif;
   font-size:2.1em;
-  
- 
   color:orange;
-  text-shadow: #9c8b26 -4px 4px 0;
+  text-shadow: #9c8b26 -2px 4px 0;
+
 
 }
     
@@ -26,46 +25,53 @@
     .char5{font-size:1.3em; color:cyan; } 
     .char6{font-size:1.3em; color:black; } 
     .char7{font-size:1.3em; color:olive; } 
-    .char8{font-size:1.3em; color:green; }  
-    .char9{font-size:1.3em; color:green; } 
-    .char10{font-size:1.3em; color:green; } 
-    .char11{font-size:1.3em; color:olive; } 
-    .char12{font-size:1.3em; color:green; } 
+    .char8{font-size:1.3em; color:orchid; }  
+    .char9{font-size:1.3em; color:cyan; } 
+    .char10{font-size:1.3em; color:khaki; } 
+    .char11{font-size:1.3em; color:chartreuse; } 
+    .char12{font-size:1.3em; color:magenta; } 
     .char13{font-size:1.3em; color:blue; } 
-    .char14{font-size:1.3em; color:green; } 
-    .char15{font-size:1.3em; color:blue; } 
+    .char14{font-size:1.3em; color:aqua; } 
+    .char15{font-size:1.3em; color:cornflowerblue; } 
     .char16{font-size:1.4em; color:yellow;}
-    .char17{font-size:1.3em; color:green; } 
+    .char17{font-size:1.3em; color:lightsteelblue; } 
     .char18{font-size:1.3em; color:red; } 
-    .char19{font-size:1.3em; color:orange; } 
+    .char19{font-size:1.3em; color:goldenrod; } 
     .char20{font-size:1.3em; color:cyan; } 
-    .char21{font-size:1.3em; color:black; }
+    .char21{font-size:1.3em; color:turquoise; }
+    .char22{font-size:1.3em; color:violet; } 
+    .char23{font-size:1.3em; color:peru; } 
+    .char24{font-size:1.3em; color:cyan; } 
+    .char25{font-size:1.3em; color:plum; } 
+    .char26{font-size:1.3em; color:royalblue; }
      
      h2.fancy_title  
                 {
                     color:white;
                     font-family:sans-serif;
-                    font-size:2.8em;
-                    margin:10px 0 -50px;
-                    background-color:hsla(320, 50%, 50%, 0.5);
+                    font-size:3.8em;
+                    margin:10px 30px -50px;
+                    padding:5px 20px;
+                    background-color: lighten(aqua, 45%);                    
                     border-radius:60px;
+                    text-shadow: black -3px 3px 0;
                    }
     h3.fancy_title{
        text-shadow: darken(magenta, 10%) -2px 2px 0;
     }
                
                 h2.fancy_title .char1, h2.fancy_title .char5, h2.fancy_title .char9
-                {color:hsla(270, 80%, 60%, 1.0);
+                {color:hsla(10, 80%, 60%, 1.0);
                     }
                 h2.fancy_title .char1:hover, h2.fancy_title .char5:hover, h2.fancy_title .char9:hover
-                {color:hsla(220, 80%, 60%, 1.0);
+                {color:hsla(10, 80%, 60%, 1.0);
                  -webkit-transform:rotate(85deg) !important;
                     }
                 h2.fancy_title .char2, h2.fancy_title .char6, h2.fancy_title .char10
                 {
-                    color:hsla(60, 90%, 60%, 1.0);
+                    color:hsla(270, 90%, 60%, 1.0);
                     -webkit-transform: rotate(15deg) !important;
-                    margin-left:-5px;}
+                    }
                 h2.fancy_title .char2:hover, h2.fancy_title .char6:hover, h2.fancy_title .char10:hover
                 {
                     color:hsla(160, 90%, 60%, 1.0);
@@ -74,7 +80,7 @@
                 h2.fancy_title .char3, h2.fancy_title .char7, h2.fancy_title .char11
                 {
                     color:hsla(180, 80%, 60%, 1.0);
-                    margin-left:-5px;}
+                    }
                 h2.fancy_title .char3:hover, h2.fancy_title .char7:hover, h2.fancy_title .char11:hover
                 {
                     color:hsla(30, 100%, 70%, 1.0);
