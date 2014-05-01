@@ -1,4 +1,7 @@
 Ariaquen::Application.routes.draw do
+  resources :ariaquenuploads
+
+
   resources :designs
 
 

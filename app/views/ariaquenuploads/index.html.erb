@@ -1,0 +1,29 @@
+<h1>Listing ariaquenuploads</h1>
+
+<table>
+  <tr>
+    <th>Item1</th>
+    <th>Item2</th>
+    <th>Item3</th>
+    <th>Uploadedimage</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ariaquenuploads.each do |ariaquenupload| %>
+  <tr>
+    <td><%= ariaquenupload.item1 %></td>
+    <td><%= ariaquenupload.item2 %></td>
+    <td><%= ariaquenupload.item3 %></td>
+    <td><%= ariaquenupload.uploadedimage %></td>
+    <td><%= link_to 'Show', ariaquenupload %></td>
+    <td><%= link_to 'Edit', edit_ariaquenupload_path(ariaquenupload) %></td>
+    <td><%= link_to 'Destroy', ariaquenupload, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ariaquenupload', new_ariaquenupload_path %>
