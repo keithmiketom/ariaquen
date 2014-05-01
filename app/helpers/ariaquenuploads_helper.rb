@@ -1,0 +1,2 @@
+module AriaquenuploadsHelper
+end
