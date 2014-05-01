@@ -13,6 +13,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 
 gem 'devise', '2.1.2' 
+gem 'dropzonejs-rails'
 
 gem 'rb-fsevent'
 
