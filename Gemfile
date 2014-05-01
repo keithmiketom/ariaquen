@@ -9,6 +9,8 @@ gem 'sqlite3'
 
 gem 'will_paginate', '~> 3.0'
 
+gem 'carrierwave'
+
 gem 'devise', '2.1.2' 
 
 gem 'rb-fsevent'
