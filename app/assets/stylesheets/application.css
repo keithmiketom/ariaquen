@@ -872,6 +872,17 @@ th h4.table_title {
       color: magenta;
       text-decoration: none; }
 
+h2.aff {
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.8em;
+  margin: 10px 30px -50px -30px;
+  padding: 5px 30px;
+  background-color: #e5ffff;
+  border-radius: 60px;
+  text-shadow: black -2px 2px 0;
+  width: 100%; }
+
 /*/////////////////// sign in/register page styles //////////////////////////*/
 .site-forms {
   position: absolute;
