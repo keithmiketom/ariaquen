@@ -1,13 +1,18 @@
-var map;
-function initialize() {
-  // Create a simple map.
-  map = new google.maps.Map(document.getElementById('map-canvas'), {
-    zoom: 4,
-    center: {lat: -28, lng: 137.883}
-  });
 
-  // Load a GeoJSON from the same server as our demo.
-  map.data.loadGeoJson('stores.json');
-}
 
-google.maps.event.addDomListener(window, 'load', initialize);
+	$(function() {
+  $('#map_canvas').gmap().bind('init', function() { 
+  	// This URL won't work on your localhost, so you need to change it
+	// see http://en.wikipedia.org/wiki/Same_origin_policy
+	$.getJSON( 'stores.json', function(data) { 
+		$.each( data.markers, function(i, marker) {
+			$('#map_canvas').gmap('addMarker', { 
+				'position': new google.maps.LatLng(marker.latitude, marker.longitude), 
+				'bounds': true 
+			}).click(function() {
+				$('#map_canvas').gmap('openInfoWindow', { 'content': marker.content }, this);
+			});
+		});
+	});
+});
+});
