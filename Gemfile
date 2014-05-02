@@ -51,6 +51,8 @@ gem 'rails_12factor', group: :production
 # Use unicorn as the app server
  gem 'unicorn'
  gem 'foreman'
+ 
+ ruby '2.0.0'
 
 # Deploy with Capistrano
 # gem 'capistrano'
