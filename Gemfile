@@ -52,7 +52,7 @@ gem 'rails_12factor', group: :production
  gem 'unicorn'
  gem 'foreman'
  
- ruby '2.0.0'
+ ruby '1.9.3'
 
 # Deploy with Capistrano
 # gem 'capistrano'
