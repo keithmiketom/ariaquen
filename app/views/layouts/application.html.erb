@@ -2,7 +2,9 @@
 <html>
 <head>
 	<!--[if !IE 7]><style type="text/css"> #wrap {display:table;height:100%}</style><![endif]-->
-  <title>Ariaquen</title>
+  <title<%= content_for?(:title) ? content_for(:title) : 'AriaQuen' %> </title>
+  <meta charset="utf-8" />
+  
 
   <%= stylesheet_link_tag    "application", :media => "all" %>
 	  <!-- we need to separate out the Javascript into the pages specificallly where they are needed -->

@@ -3,6 +3,7 @@ class SiteController < ApplicationController
   end
 
   def home
+    @title = "Welcome to AriaQuen"
   end
 
   def contact
